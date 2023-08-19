@@ -1,0 +1,1252 @@
+@charset "UTF-8";
+.cartMenu {
+  position: fixed;
+  top: 0; /* Расположите меню на нужной вам высоте от верхнего края */
+  right: -540px; /* Скрытое положение меню */
+  width: 500px;
+  height: 140vh;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  -webkit-transition: right 0.3s ease;
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+.cartMenuOpened {
+  right: 0; /* Показываем меню, сдвигая его на 0 */
+  z-index: 999;
+}
+
+.emptyContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 450px;
+}
+.emptyContainer p {
+  margin: 15px 0 15px 0;
+  font-size: 1.4rem;
+  font-family: "Blinker";
+  cursor: default;
+}
+.emptyContainer button {
+  font-size: 1rem;
+  padding: 10px 8px 10px 8px;
+  cursor: pointer;
+}
+
+.imgInCart {
+  width: 200px;
+  height: 200px;
+}
+.imgInCart img {
+  width: 100%;
+  height: 100%;
+}
+
+.txtContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.3rem;
+  font-family: "Blinker";
+  font-weight: 700;
+}
+
+.productContainer {
+  height: 70vh;
+  padding: 0.2rem;
+  margin-top: 50px;
+  background: white;
+}
+
+.fullProductDiv {
+  height: 70%;
+  overflow-y: scroll;
+  padding: 5px;
+  margin-top: 2rem;
+}
+
+.fullProduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 100%;
+  gap: 0.4rem;
+}
+
+.cartProduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid grey;
+}
+
+.leftImg {
+  width: 25%;
+  height: 100px;
+}
+.leftImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.cartInfoMiddle {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 10px;
+  font-size: 1.3rem;
+  font-family: "Nunito";
+}
+
+.cartBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90px;
+  height: 30px;
+  border: 1px solid black;
+}
+.cartBtns button {
+  width: 30px;
+  height: 30px;
+  color: white;
+  background: black;
+  border: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.cartBtns button:hover {
+  background: #373737;
+}
+.cartBtns span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  cursor: default;
+}
+
+.rightInfo {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.rightInfo p {
+  font-family: "Nunito";
+  font-weight: 700;
+}
+
+.totalContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 70px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: white;
+  border-top: 2px dashed black;
+  margin-top: 20px;
+}
+.totalContainer p {
+  font-size: 1.3rem;
+  font-family: "Nunito";
+  font-weight: 700;
+}
+.totalContainer button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: transparent;
+  border: 2px solid black !important;
+}
+.totalContainer button:hover {
+  color: white;
+  background-color: black;
+}
+
+@media (max-width: 538px) {
+  .cartMenu {
+    position: fixed;
+    top: 0; /* Расположите меню на нужной вам высоте от верхнего края */
+    right: -540px; /* Скрытое положение меню */
+    width: 100%;
+    height: 140vh;
+    background-color: white;
+    color: black;
+    padding: 10px 0 0 0;
+    -webkit-transition: right 0.3s ease;
+    transition: right 0.3s ease;
+    z-index: 999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cartMenuOpened {
+    right: 0; /* Показываем меню, сдвигая его на 0 */
+    z-index: 999;
+  }
+  .emptyContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 450px;
+  }
+  .emptyContainer p {
+    margin: 15px 0 15px 0;
+    font-size: 1.4rem;
+    font-family: "Blinker";
+    cursor: default;
+  }
+  .emptyContainer button {
+    font-size: 1rem;
+    padding: 10px 8px 10px 8px;
+    cursor: pointer;
+  }
+  .imgInCart {
+    width: 150px;
+    height: 150px;
+  }
+  .imgInCart img {
+    width: 100%;
+    height: 100%;
+  }
+  .txtContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 1.3rem;
+    font-family: "Blinker";
+    font-weight: 700;
+    width: 80%;
+  }
+  .productContainer {
+    height: 70vh;
+    padding: 0.2rem;
+    margin-top: 50px;
+    background: white;
+  }
+  .fullProductDiv {
+    height: 70%;
+    overflow-y: scroll;
+    padding: 5px;
+    margin-top: 2rem;
+  }
+  .fullProduct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .cartProduct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .leftImg {
+    width: 25%;
+    height: 100px;
+  }
+  .leftImg img {
+    width: 100%;
+    height: 100%;
+  }
+  .cartInfoMiddle {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 10px;
+    font-size: 1.3rem;
+    font-family: "Nunito";
+  }
+  .cartBtns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90px;
+    height: 30px;
+    border: 1px solid black;
+  }
+  .cartBtns button {
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: black;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .cartBtns button:hover {
+    background: #373737;
+  }
+  .cartBtns span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30px;
+    cursor: default;
+  }
+  .rightInfo {
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rightInfo p {
+    font-family: "Nunito";
+    font-weight: 700;
+  }
+  .totalContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 70px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: white;
+    border-top: 2px dashed black;
+    margin-top: 20px;
+  }
+  .totalContainer p {
+    font-size: 1.3rem;
+    font-family: "Nunito";
+    font-weight: 700;
+  }
+  .totalContainer button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    background-color: transparent;
+    border: 2px solid black !important;
+  }
+  .totalContainer button:hover {
+    color: white;
+    background-color: black;
+  }
+}
+@media (max-width: 338px) {
+  .cartMenu {
+    position: fixed;
+    top: 0; /* Расположите меню на нужной вам высоте от верхнего края */
+    right: -540px; /* Скрытое положение меню */
+    width: 100%;
+    height: 140vh;
+    background-color: white;
+    color: black;
+    padding: 10px 0 0 0;
+    -webkit-transition: right 0.3s ease;
+    transition: right 0.3s ease;
+    z-index: 999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cartMenuOpened {
+    right: 0; /* Показываем меню, сдвигая его на 0 */
+    z-index: 999;
+  }
+  .emptyContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 450px;
+  }
+  .emptyContainer p {
+    margin: 15px 0 15px 0;
+    font-size: 1.2rem;
+    font-family: "Blinker";
+    cursor: default;
+  }
+  .emptyContainer button {
+    font-size: 1rem;
+    padding: 10px 8px 10px 8px;
+    cursor: pointer;
+  }
+  .imgInCart {
+    width: 100px;
+    height: 100px;
+  }
+  .imgInCart img {
+    width: 100%;
+    height: 100%;
+  }
+  .txtContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 1rem;
+    font-family: "Blinker";
+    font-weight: 700;
+    width: 200px;
+  }
+  .productContainer {
+    height: 70vh;
+    padding: 0.2rem;
+    margin-top: 50px;
+    background: white;
+  }
+  .fullProductDiv {
+    height: 70%;
+    overflow-y: scroll;
+    padding: 5px;
+    margin-top: 2rem;
+  }
+  .fullProduct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 0.3rem;
+  }
+  .cartProduct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    border: 1px solid grey;
+  }
+  .leftImg {
+    padding-top: 5px;
+    height: 80px;
+    width: 100px;
+  }
+  .leftImg img {
+    width: 100%;
+    height: 100%;
+  }
+  .cartInfoMiddle {
+    width: 80px;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+    font-size: 0.9rem;
+    font-family: "Nunito";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cartBtns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90px;
+    height: 30px;
+    border: 1px solid black;
+  }
+  .cartBtns button {
+    width: 30px;
+    height: 30px;
+    color: white;
+    background: black;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .cartBtns button:hover {
+    background: #373737;
+  }
+  .cartBtns span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30px;
+    cursor: default;
+  }
+  .rightInfo {
+    width: 100%;
+    height: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .rightInfo p {
+    font-size: 0.8rem;
+    font-family: "Nunito";
+    font-weight: 700;
+  }
+  .totalContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: white;
+    border-top: 2px dashed black;
+    margin-top: 20px;
+  }
+  .totalContainer p {
+    font-size: 1.1rem;
+    font-family: "Nunito";
+    font-weight: 700;
+  }
+  .totalContainer button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    background-color: transparent;
+    border: 2px solid black !important;
+  }
+  .totalContainer button:hover {
+    color: white;
+    background-color: black;
+  }
+}
+@media (max-width: 200px) {
+  .cartMenu {
+    position: fixed;
+    top: 0; /* Расположите меню на нужной вам высоте от верхнего края */
+    right: -540px; /* Скрытое положение меню */
+    width: 100%;
+    height: 140vh;
+    background-color: white;
+    color: black;
+    padding: 10px 0 0 0;
+    -webkit-transition: right 0.3s ease;
+    transition: right 0.3s ease;
+    z-index: 999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cartMenuOpened {
+    right: 0; /* Показываем меню, сдвигая его на 0 */
+    z-index: 999;
+  }
+  .emptyContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 450px;
+  }
+  .emptyContainer p {
+    margin: 15px 0 15px 0;
+    font-size: 0.9rem;
+    font-family: "Blinker";
+    cursor: default;
+  }
+  .emptyContainer button {
+    font-size: 0.8rem;
+    padding: 8px 8px 8px 8px;
+    cursor: pointer;
+  }
+  .imgInCart {
+    width: 100px;
+    height: 100px;
+  }
+  .imgInCart img {
+    width: 100%;
+    height: 100%;
+  }
+  .txtContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 0.8rem;
+    font-family: "Blinker";
+    font-weight: 700;
+    width: 80%;
+  }
+  .productContainer {
+    height: 70vh;
+    padding: 0.2rem;
+    margin-top: 50px;
+    background: white;
+  }
+  .fullProductDiv {
+    height: 70%;
+    overflow-y: scroll;
+    padding: 5px;
+    margin-top: 2rem;
+  }
+  .fullProduct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 0.3rem;
+  }
+  .cartProduct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    border: 1px solid grey;
+  }
+  .leftImg {
+    padding-top: 5px;
+    height: 80px;
+    width: 80px;
+  }
+  .leftImg img {
+    width: 100%;
+    height: 100%;
+  }
+  .cartInfoMiddle {
+    width: 80%;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    font-size: 0.8rem;
+    font-family: "Nunito";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cartBtns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 50px;
+    height: 20px;
+    border: 1px solid black;
+  }
+  .cartBtns button {
+    width: 40px;
+    height: 20px;
+    color: white;
+    background: black;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .cartBtns button:hover {
+    background: #373737;
+  }
+  .cartBtns span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30px;
+    cursor: default;
+  }
+  .rightInfo {
+    width: 100%;
+    height: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .rightInfo p {
+    font-size: 0.8rem;
+    font-family: "Nunito";
+    font-weight: 700;
+  }
+  .totalContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: white;
+    border-top: 2px dashed black;
+    margin-top: 20px;
+  }
+  .totalContainer p {
+    font-size: 1.1rem;
+    font-family: "Nunito";
+    font-weight: 700;
+  }
+  .totalContainer button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    background-color: transparent;
+    border: 2px solid black !important;
+  }
+  .totalContainer button:hover {
+    color: white;
+    background-color: black;
+  }
+}
+@media (max-width: 150px) {
+  .cartMenu {
+    position: fixed;
+    top: 0; /* Расположите меню на нужной вам высоте от верхнего края */
+    right: -540px; /* Скрытое положение меню */
+    width: 100%;
+    height: 140vh;
+    background-color: white;
+    color: black;
+    padding: 10px 0 0 0;
+    -webkit-transition: right 0.3s ease;
+    transition: right 0.3s ease;
+    z-index: 999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cartMenuOpened {
+    right: 0; /* Показываем меню, сдвигая его на 0 */
+    z-index: 999;
+  }
+  .emptyContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 450px;
+  }
+  .emptyContainer p {
+    margin: 15px 0 15px 0;
+    font-size: 0.9rem;
+    font-family: "Blinker";
+    cursor: default;
+  }
+  .emptyContainer button {
+    font-size: 0.8rem;
+    padding: 8px 8px 8px 8px;
+    cursor: pointer;
+  }
+  .imgInCart {
+    width: 100px;
+    height: 100px;
+  }
+  .imgInCart img {
+    width: 100%;
+    height: 100%;
+  }
+  .txtContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 0.8rem;
+    font-family: "Blinker";
+    font-weight: 700;
+    width: 80%;
+  }
+  .productContainer {
+    height: 70vh;
+    padding: 0.2rem;
+    margin-top: 50px;
+    background: white;
+  }
+  .fullProductDiv {
+    height: 70%;
+    overflow-y: scroll;
+    padding: 5px;
+    margin-top: 2rem;
+  }
+  .fullProduct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 0.3rem;
+  }
+  .cartProduct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    border: 1px solid grey;
+  }
+  .leftImg {
+    padding-top: 5px;
+    height: 50px;
+    width: 50px;
+  }
+  .leftImg img {
+    width: 100%;
+    height: 100%;
+  }
+  .cartInfoMiddle {
+    width: 50px;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    font-size: 0.7rem;
+    font-family: "Nunito";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cartBtns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 30px;
+    height: 20px;
+    border: 1px solid black;
+  }
+  .cartBtns button {
+    width: 30px;
+    height: 20px;
+    color: white;
+    background: black;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .cartBtns button:hover {
+    background: #373737;
+  }
+  .cartBtns span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30px;
+    cursor: default;
+  }
+  .rightInfo {
+    width: 100%;
+    height: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .rightInfo p {
+    font-size: 0.7rem;
+    font-family: "Nunito";
+    font-weight: 700;
+  }
+  .totalContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: white;
+    border-top: 2px dashed black;
+    margin-top: 20px;
+  }
+  .totalContainer p {
+    font-size: 1.1rem;
+    font-family: "Nunito";
+    font-weight: 700;
+  }
+  .totalContainer button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    background-color: transparent;
+    border: 2px solid black !important;
+  }
+  .totalContainer button:hover {
+    color: white;
+    background-color: black;
+  }
+}
