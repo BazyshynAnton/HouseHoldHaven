@@ -6,7 +6,6 @@
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 .button:hover {
   border: 2px solid rgba(0, 0, 0, 0.5);
 }

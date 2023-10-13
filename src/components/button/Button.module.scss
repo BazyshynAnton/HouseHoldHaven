@@ -4,8 +4,7 @@
   cursor: pointer;
   padding: 0.3rem 1.3rem;
   transition: all 0.2s;
-}
-
-.button:hover {
-  border: 2px solid rgba(0, 0, 0, 0.5);
+  &:hover {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+  }
 }
