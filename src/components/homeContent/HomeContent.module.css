@@ -6,15 +6,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-.categoriesContainer .superMain {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -355,1159 +346,162 @@
 }
 
 @media (max-width: 1090px) {
-  .superMain {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .categoriesContainer {
-    margin-top: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .categoriesContainer h2 {
-    font-family: "Nunito", sans-serif;
     font-size: 1.6rem;
   }
   .furniture {
-    position: relative;
     width: 400px;
-    height: 310px;
-    margin-right: 10px;
-    overflow: hidden;
-  }
-  .furniture:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .furniture img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .furniture img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .furniture h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(15%, -75%);
-            transform: translate(15%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .skinCare {
-    position: relative;
     width: 260px;
-    height: 310px;
-    margin-right: 10px;
-    overflow: hidden;
-  }
-  .skinCare:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.6;
-  }
-  .skinCare img {
-    width: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .skinCare img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .skinCare h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(25%, -75%);
-            transform: translate(25%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .containerTwo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 190px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .kitchen {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 150px;
     width: 190px;
-    margin-bottom: 10px;
-    overflow: hidden;
-  }
-  .kitchen:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .kitchen img {
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .kitchen img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .kitchen h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(12%, -50%);
-            transform: translate(12%, -50%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .electronics {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 150px;
     width: 190px;
-    overflow: hidden;
-  }
-  .electronics:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .electronics img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .electronics img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .electronics h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(8%, -75%);
-            transform: translate(8%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
-  }
-  .productsContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .productsContainer h2 {
-    text-align: center;
-    margin: 20px 0px 0px 0px;
-    font-family: "Lora", serif;
-    font-size: 1.4rem;
-  }
-  .productsContainer hr {
-    width: 500px;
-    border: none;
-    background: black;
-    border: 1px solid black;
-    border-radius: 50px;
-    margin-top: 4px;
-    margin-bottom: 20px;
-  }
-  .cardsContainer {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-columns: 200px 20px 200px 20px 200px 20px 200px;
-    grid-template-columns: repeat(4, 200px);
-    gap: 20px;
-  }
-  .cardsContainer a {
-    text-decoration: none;
-    color: black;
-  }
-  .adContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 40px;
-  }
-  .adTextContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 400px;
-    height: 250px;
-  }
-  .adTextContainer h3 {
-    font-family: "Nunito", sans-serif;
-    font-size: 1.6rem;
-  }
-  .adTextContainer p {
-    font-size: 0.9rem;
-    font-family: "Nunito", sans-serif;
-  }
-  .adPictureContainer {
-    width: 400px;
-    height: 250px;
-  }
-  .adPictureContainer img {
-    width: 100%;
-    height: 100%;
-  }
-  .adContainer2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 40px;
-  }
-  .adTextContainer2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 400px;
-    height: 250px;
-  }
-  .adTextContainer2 h3 {
-    font-family: "Nunito", sans-serif;
-    font-size: 1.6rem;
-  }
-  .adTextContainer2 p {
-    font-size: 0.9rem;
-    font-family: "Nunito", sans-serif;
-  }
-  .adPictureContainer2 {
-    width: 400px;
-    height: 250px;
-  }
-  .adPictureContainer2 img {
-    width: 100%;
-    height: 100%;
   }
 }
 @media (max-width: 930px) {
-  .superMain {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .categoriesContainer {
-    margin-top: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .categoriesContainer h2 {
-    font-family: "Nunito", sans-serif;
     font-size: 1.5rem;
   }
   .furniture {
-    position: relative;
     width: 310px;
     height: 280px;
-    margin-right: 10px;
-    overflow: hidden;
-  }
-  .furniture:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .furniture img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .furniture img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .furniture h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(15%, -75%);
-            transform: translate(15%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .skinCare {
-    position: relative;
     width: 250px;
     height: 280px;
-    margin-right: 10px;
-    overflow: hidden;
-  }
-  .skinCare:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.6;
-  }
-  .skinCare img {
-    width: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .skinCare img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .skinCare h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(25%, -75%);
-            transform: translate(25%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .containerTwo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 170px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .kitchen {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     height: 135px;
     width: 170px;
-    margin-bottom: 10px;
-    overflow: hidden;
-  }
-  .kitchen:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .kitchen img {
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .kitchen img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .kitchen h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(12%, -50%);
-            transform: translate(12%, -50%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .electronics {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     height: 135px;
     width: 170px;
-    overflow: hidden;
-  }
-  .electronics:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .electronics img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .electronics img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .electronics h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(8%, -75%);
-            transform: translate(8%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
-  }
-  .productsContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .productsContainer h2 {
-    text-align: center;
-    margin: 20px 0px 0px 0px;
-    font-family: "Lora", serif;
-    font-size: 1.4rem;
-  }
-  .productsContainer hr {
-    width: 500px;
-    border: none;
-    background: black;
-    border: 1px solid black;
-    border-radius: 50px;
-    margin-top: 4px;
-    margin-bottom: 20px;
   }
   .cardsContainer {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -ms-grid-columns: 165px 5px 165px 5px 165px 5px 165px;
     grid-template-columns: repeat(4, 165px);
     gap: 5px;
   }
-  .cardsContainer a {
-    text-decoration: none;
-    color: black;
-  }
-  .adContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 40px;
-  }
   .adTextContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 300px;
     height: 200px;
   }
   .adTextContainer h3 {
-    font-family: "Nunito", sans-serif;
     font-size: 1.2rem;
-  }
-  .adTextContainer p {
-    font-size: 0.9rem;
-    font-family: "Nunito", sans-serif;
   }
   .adPictureContainer {
     width: 300px;
     height: 200px;
   }
-  .adPictureContainer img {
-    width: 100%;
-    height: 100%;
-  }
-  .adContainer2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 40px;
-  }
   .adTextContainer2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 300px;
     height: 200px;
-  }
-  .adTextContainer2 h3 {
-    font-family: "Nunito", sans-serif;
-    font-size: 1.6rem;
-  }
-  .adTextContainer2 p {
-    font-size: 0.9rem;
-    font-family: "Nunito", sans-serif;
   }
   .adPictureContainer2 {
     width: 300px;
     height: 200px;
-  }
-  .adPictureContainer2 img {
-    width: 100%;
-    height: 100%;
   }
 }
 @media (max-width: 800px) {
-  .superMain {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .categoriesContainer {
-    margin-top: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .categoriesContainer h2 {
-    font-family: "Nunito", sans-serif;
-    font-size: 1.5rem;
-  }
   .furniture {
-    position: relative;
     width: 250px;
     height: 270px;
-    margin-right: 10px;
-    overflow: hidden;
-  }
-  .furniture:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .furniture img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .furniture img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .furniture h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(15%, -75%);
-            transform: translate(15%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .skinCare {
-    position: relative;
     width: 200px;
     height: 270px;
-    margin-right: 10px;
-    overflow: hidden;
-  }
-  .skinCare:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.6;
-  }
-  .skinCare img {
-    width: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .skinCare img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .skinCare h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(25%, -75%);
-            transform: translate(25%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .containerTwo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 150px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .kitchen {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 150px;
     height: 130px;
-    margin-bottom: 10px;
-    overflow: hidden;
-  }
-  .kitchen:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .kitchen img {
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .kitchen img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .kitchen h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(12%, -50%);
-            transform: translate(12%, -50%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .electronics {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 150px;
     height: 130px;
-    overflow: hidden;
-  }
-  .electronics:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .electronics img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .electronics img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .electronics h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(8%, -75%);
-            transform: translate(8%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
-  }
-  .productsContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .productsContainer h2 {
-    text-align: center;
-    margin: 20px 0px 0px 0px;
-    font-family: "Lora", serif;
     font-size: 1.3rem;
   }
   .productsContainer hr {
     width: 400px;
-    border: none;
-    background: black;
-    border: 1px solid black;
-    border-radius: 50px;
-    margin-top: 4px;
-    margin-bottom: 20px;
   }
   .cardsContainer {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-columns: 142px 5px 142px 5px 142px 5px 142px;
+    -ms-grid-columns: (142px)[4];
     grid-template-columns: repeat(4, 142px);
-    gap: 5px;
-  }
-  .cardsContainer a {
-    text-decoration: none;
-    color: black;
-  }
-  .adContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 40px;
   }
   .adTextContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 260px;
     height: 150px;
   }
   .adTextContainer h3 {
-    font-family: "Nunito", sans-serif;
     font-size: 1rem;
   }
   .adTextContainer p {
     font-size: 0.8rem;
-    font-family: "Nunito", sans-serif;
   }
   .adPictureContainer {
     width: 260px;
     height: 150px;
   }
-  .adPictureContainer img {
-    width: 100%;
-    height: 100%;
-  }
-  .adContainer2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 40px;
-  }
   .adTextContainer2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 260px;
     height: 150px;
   }
   .adTextContainer2 h3 {
-    font-family: "Nunito", sans-serif;
     font-size: 1rem;
   }
   .adTextContainer2 p {
     font-size: 0.8rem;
-    font-family: "Nunito", sans-serif;
   }
   .adPictureContainer2 {
     width: 260px;
     height: 150px;
-  }
-  .adPictureContainer2 img {
-    width: 100%;
-    height: 100%;
   }
 }
 @media (max-width: 670px) {
-  .superMain {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .categoriesContainer {
-    margin-top: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .categoriesContainer h2 {
-    font-family: "Nunito", sans-serif;
     font-size: 1.3rem;
   }
   .furniture {
-    position: relative;
     width: 240px;
     height: 200px;
-    overflow: hidden;
     margin-right: 5px;
     margin-bottom: 5px;
   }
-  .furniture:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .furniture img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .furniture img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
   .furniture h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     -webkit-transform: translate(25%, -75%);
             transform: translate(25%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .skinCare {
-    position: relative;
     width: 240px;
     height: 200px;
-    overflow: hidden;
     margin-right: 0;
     margin-left: 5px;
-  }
-  .skinCare:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.6;
-  }
-  .skinCare img {
-    width: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .skinCare img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    margin-bottom: 5px;
   }
   .skinCare h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     -webkit-transform: translate(90%, -75%);
             transform: translate(90%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .containerTwo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1518,1969 +512,283 @@
     margin-top: 5px;
   }
   .kitchen {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 200px;
-    height: 130px;
-    margin-bottom: 10px;
-    overflow: hidden;
     margin-right: 5px;
   }
-  .kitchen:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .kitchen img {
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .kitchen img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
   .kitchen h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     -webkit-transform: translate(90%, -75%);
             transform: translate(90%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .electronics {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 200px;
-    height: 130px;
-    overflow: hidden;
     margin-left: 5px;
   }
-  .electronics:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .electronics img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .electronics img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
   .electronics h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     -webkit-transform: translate(45%, -75%);
             transform: translate(45%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
-  }
-  .productsContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .productsContainer h2 {
-    text-align: center;
-    margin: 20px 0px 0px 0px;
-    font-family: "Lora", serif;
-    font-size: 1.3rem;
-  }
-  .productsContainer hr {
-    width: 400px;
-    border: none;
-    background: black;
-    border: 1px solid black;
-    border-radius: 50px;
-    margin-top: 4px;
-    margin-bottom: 20px;
   }
   .cardsContainer {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-columns: 142px 5px 142px 5px 142px;
+    -ms-grid-columns: (142px)[3];
     grid-template-columns: repeat(3, 142px);
-    gap: 5px;
-  }
-  .cardsContainer a {
-    text-decoration: none;
-    color: black;
-  }
-  .adContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 40px;
   }
   .adTextContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 260px;
-    height: 150px;
-  }
-  .adTextContainer h3 {
-    font-family: "Nunito", sans-serif;
-    font-size: 1rem;
-  }
-  .adTextContainer p {
-    font-size: 0.8rem;
-    font-family: "Nunito", sans-serif;
-  }
-  .adPictureContainer {
-    width: 260px;
-    height: 150px;
-  }
-  .adPictureContainer img {
-    width: 100%;
-    height: 100%;
-  }
-  .adContainer2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 40px;
-  }
-  .adTextContainer2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 260px;
-    height: 150px;
-  }
-  .adTextContainer2 h3 {
-    font-family: "Nunito", sans-serif;
-    font-size: 1rem;
-  }
-  .adTextContainer2 p {
-    font-size: 0.8rem;
-    font-family: "Nunito", sans-serif;
-  }
-  .adPictureContainer2 {
-    width: 260px;
-    height: 150px;
-  }
-  .adPictureContainer2 img {
-    width: 100%;
-    height: 100%;
   }
 }
 @media (max-width: 570px) {
-  .superMain {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .categoriesContainer {
-    margin-top: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .categoriesContainer h2 {
-    font-family: "Nunito", sans-serif;
     font-size: 1.1rem;
   }
   .furniture {
-    position: relative;
     width: 190px;
     height: 150px;
-    overflow: hidden;
-    margin-right: 5px;
-    margin-bottom: 5px;
-  }
-  .furniture:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .furniture img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .furniture img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   .furniture h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     -webkit-transform: translate(20%, -75%);
             transform: translate(20%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .skinCare {
-    position: relative;
     width: 190px;
     height: 150px;
-    overflow: hidden;
-    margin-right: 0;
-    margin-left: 5px;
-  }
-  .skinCare:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.6;
-  }
-  .skinCare img {
-    width: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .skinCare img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   .skinCare h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(75%, -75%);
-            transform: translate(75%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
-  }
-  .containerTwo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 5px;
+    -webkit-transform: translate(75%, -83%);
+            transform: translate(75%, -83%);
   }
   .kitchen {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 150px;
     height: 150px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    margin-right: 5px;
-  }
-  .kitchen:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .kitchen img {
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .kitchen img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   .kitchen h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     -webkit-transform: translate(75%, -75%);
             transform: translate(75%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .electronics {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 150px;
     height: 150px;
-    overflow: hidden;
-    margin-left: 5px;
-  }
-  .electronics:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .electronics img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .electronics img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   .electronics h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     -webkit-transform: translate(33%, -75%);
             transform: translate(33%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
-  }
-  .productsContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .productsContainer h2 {
-    text-align: center;
-    margin: 20px 0px 0px 0px;
-    font-family: "Lora", serif;
-    font-size: 1.3rem;
-  }
-  .productsContainer hr {
-    width: 400px;
-    border: none;
-    background: black;
-    border: 1px solid black;
-    border-radius: 50px;
-    margin-top: 4px;
-    margin-bottom: 20px;
   }
   .cardsContainer {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-columns: 142px 5px 142px 5px 142px;
+    -ms-grid-columns: (142px)[3];
     grid-template-columns: repeat(3, 142px);
-    gap: 5px;
-  }
-  .cardsContainer a {
-    text-decoration: none;
-    color: black;
-  }
-  .adContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 40px;
   }
   .adTextContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 240px;
-    height: 150px;
-  }
-  .adTextContainer h3 {
-    font-family: "Nunito", sans-serif;
-    font-size: 1rem;
-  }
-  .adTextContainer p {
-    font-size: 0.8rem;
-    font-family: "Nunito", sans-serif;
   }
   .adPictureContainer {
     width: 200px;
     height: 145px;
   }
-  .adPictureContainer img {
-    width: 100%;
-    height: 100%;
-  }
-  .adContainer2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 40px;
-  }
   .adTextContainer2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 240px;
-    height: 150px;
-  }
-  .adTextContainer2 h3 {
-    font-family: "Nunito", sans-serif;
-    font-size: 1rem;
-  }
-  .adTextContainer2 p {
-    font-size: 0.8rem;
-    font-family: "Nunito", sans-serif;
   }
   .adPictureContainer2 {
     width: 200px;
     height: 145px;
   }
-  .adPictureContainer2 img {
-    width: 100%;
-    height: 100%;
-  }
 }
 @media (max-width: 460px) {
-  .superMain {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .categoriesContainer {
-    margin-top: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .categoriesContainer h2 {
-    font-family: "Nunito", sans-serif;
-    font-size: 1.1rem;
-  }
   .furniture {
-    position: relative;
     width: 160px;
-    height: 150px;
-    overflow: hidden;
-    margin-right: 5px;
-    margin-bottom: 5px;
-  }
-  .furniture:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .furniture img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .furniture img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   .furniture h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     -webkit-transform: translate(8%, -75%);
             transform: translate(8%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .skinCare {
-    position: relative;
     width: 160px;
-    height: 150px;
-    overflow: hidden;
-    margin-right: 0;
-    margin-left: 5px;
-  }
-  .skinCare:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.6;
-  }
-  .skinCare img {
-    width: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .skinCare img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   .skinCare h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(60%, -75%);
-            transform: translate(60%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
-  }
-  .containerTwo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 5px;
-  }
-  .kitchen {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    margin-right: 5px;
-  }
-  .kitchen:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .kitchen img {
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .kitchen img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .kitchen h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(75%, -75%);
-            transform: translate(75%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
-  }
-  .electronics {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    margin-left: 5px;
-  }
-  .electronics:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .electronics img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .electronics img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .electronics h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(33%, -75%);
-            transform: translate(33%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
-  }
-  .productsContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-transform: translate(60%, -85%);
+            transform: translate(60%, -85%);
   }
   .productsContainer h2 {
-    text-align: center;
-    margin: 20px 0px 0px 0px;
-    font-family: "Lora", serif;
     font-size: 1.2rem;
   }
   .productsContainer hr {
     width: 300px;
-    border: none;
-    background: black;
-    border: 1px solid black;
-    border-radius: 50px;
-    margin-top: 4px;
-    margin-bottom: 20px;
   }
   .cardsContainer {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-columns: 230px;
+    -ms-grid-columns: (230px)[1];
     grid-template-columns: repeat(1, 230px);
-    gap: 5px;
-  }
-  .cardsContainer a {
-    text-decoration: none;
-    color: black;
-  }
-  .adContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 40px;
   }
   .adTextContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 260px;
-    height: 150px;
   }
   .adTextContainer h3 {
-    font-family: "Nunito", sans-serif;
     font-size: 1.2rem;
   }
   .adTextContainer p {
     font-size: 0.9rem;
-    font-family: "Nunito", sans-serif;
   }
   .adPictureContainer {
     display: none;
   }
-  .adContainer2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 40px;
-  }
   .adTextContainer2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 260px;
-    height: 150px;
   }
   .adTextContainer2 h3 {
-    font-family: "Nunito", sans-serif;
     font-size: 1.2rem;
   }
   .adTextContainer2 p {
     font-size: 0.9rem;
-    font-family: "Nunito", sans-serif;
   }
   .adPictureContainer2 {
     display: none;
   }
 }
 @media (max-width: 400px) {
-  .superMain {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .categoriesContainer {
-    margin-top: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .categoriesContainer h2 {
-    font-family: "Nunito", sans-serif;
     font-size: 1rem;
   }
   .furniture {
-    position: relative;
     width: 140px;
     height: 140px;
-    overflow: hidden;
-    margin-right: 5px;
-    margin-bottom: 5px;
-  }
-  .furniture:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .furniture img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .furniture img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .furniture h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(8%, -75%);
-            transform: translate(8%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .skinCare {
-    position: relative;
     width: 140px;
     height: 140px;
-    overflow: hidden;
-    margin-right: 0;
-    margin-left: 5px;
-  }
-  .skinCare:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.6;
-  }
-  .skinCare img {
-    width: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
   }
   .skinCare img:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
   .skinCare h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(60%, -75%);
-            transform: translate(60%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
-  }
-  .containerTwo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 5px;
+    -webkit-transform: translate(60%, -80%);
+            transform: translate(60%, -80%);
   }
   .kitchen {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 140px;
     height: 140px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    margin-right: 5px;
-  }
-  .kitchen:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .kitchen img {
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .kitchen img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .kitchen h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(75%, -75%);
-            transform: translate(75%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .electronics {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 140px;
     height: 140px;
-    overflow: hidden;
-    margin-left: 5px;
-  }
-  .electronics:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .electronics img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .electronics img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .electronics h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(33%, -75%);
-            transform: translate(33%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
-  }
-  .productsContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .productsContainer h2 {
-    text-align: center;
-    margin: 20px 0px 0px 0px;
-    font-family: "Lora", serif;
-    font-size: 1.2rem;
   }
   .productsContainer hr {
     width: 250px;
-    border: none;
-    background: black;
-    border: 1px solid black;
-    border-radius: 50px;
-    margin-top: 4px;
-    margin-bottom: 20px;
-    text-align: center;
   }
   .cardsContainer {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-columns: 220px;
+    -ms-grid-columns: (220px)[1];
     grid-template-columns: repeat(1, 220px);
-    gap: 5px;
-  }
-  .cardsContainer a {
-    text-decoration: none;
-    color: black;
-  }
-  .adContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 40px;
-  }
-  .adTextContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 260px;
-    height: 150px;
-  }
-  .adTextContainer h3 {
-    font-family: "Nunito", sans-serif;
-    font-size: 1.2rem;
-  }
-  .adTextContainer p {
-    font-size: 0.9rem;
-    font-family: "Nunito", sans-serif;
-  }
-  .adPictureContainer {
-    display: none;
-  }
-  .adContainer2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 40px;
-  }
-  .adTextContainer2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 260px;
-    height: 150px;
-  }
-  .adTextContainer2 h3 {
-    font-family: "Nunito", sans-serif;
-    font-size: 1.2rem;
-  }
-  .adTextContainer2 p {
-    font-size: 0.9rem;
-    font-family: "Nunito", sans-serif;
-  }
-  .adPictureContainer2 {
-    display: none;
   }
 }
 @media (max-width: 355px) {
-  .superMain {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .categoriesContainer {
-    margin-top: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .categoriesContainer h2 {
-    font-family: "Nunito", sans-serif;
     font-size: 1.2rem;
   }
   .furniture {
-    position: relative;
     width: 160px;
     height: 110px;
-    overflow: hidden;
     margin-right: 0px;
-    margin-bottom: 5px;
-  }
-  .furniture:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .furniture img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .furniture img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   .furniture h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     -webkit-transform: translate(4%, -75%);
             transform: translate(4%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .skinCare {
-    position: relative;
-    width: 140px;
     height: 110px;
-    overflow: hidden;
-    margin-right: 0;
     margin-left: 0px;
-  }
-  .skinCare:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.6;
-  }
-  .skinCare img {
-    width: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .skinCare img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    margin-bottom: 0px;
   }
   .skinCare h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     -webkit-transform: translate(45%, -75%);
             transform: translate(45%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .containerTwo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 5px;
   }
   .kitchen {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 120px;
     height: 110px;
-    margin-bottom: 10px;
-    overflow: hidden;
     margin-right: 0;
-  }
-  .kitchen:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .kitchen img {
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .kitchen img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    margin-bottom: 5px;
   }
   .kitchen h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     -webkit-transform: translate(43%, -75%);
             transform: translate(43%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .electronics {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 110px;
     height: 110px;
-    overflow: hidden;
     margin-left: 0px;
   }
-  .electronics:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .electronics img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .electronics img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
   .electronics h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     -webkit-transform: translate(7%, -75%);
             transform: translate(7%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
-  }
-  .productsContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .productsContainer h2 {
-    text-align: center;
-    margin: 20px 0px 0px 0px;
-    font-family: "Lora", serif;
     font-size: 1rem;
   }
   .productsContainer hr {
     width: 150px;
-    border: none;
-    background: black;
-    border: 1px solid black;
-    border-radius: 50px;
-    margin-top: 4px;
-    margin-bottom: 20px;
   }
   .cardsContainer {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-columns: 190px;
+    -ms-grid-columns: (190px)[1];
     grid-template-columns: repeat(1, 190px);
-    gap: 5px;
-  }
-  .cardsContainer a {
-    text-decoration: none;
-    color: black;
   }
   .adContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     margin-top: 60px;
-  }
-  .adTextContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 260px;
-    height: 150px;
-  }
-  .adTextContainer h3 {
-    font-family: "Nunito", sans-serif;
-    font-size: 1.2rem;
-  }
-  .adTextContainer p {
-    font-size: 0.9rem;
-    font-family: "Nunito", sans-serif;
-  }
-  .adPictureContainer {
-    display: none;
-  }
-  .adContainer2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 40px;
-  }
-  .adTextContainer2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 260px;
-    height: 150px;
-  }
-  .adTextContainer2 h3 {
-    font-family: "Nunito", sans-serif;
-    font-size: 1.2rem;
-  }
-  .adTextContainer2 p {
-    font-size: 0.9rem;
-    font-family: "Nunito", sans-serif;
-  }
-  .adPictureContainer2 {
-    display: none;
   }
 }
 @media (max-width: 270px) {
-  .superMain {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .categoriesContainer {
-    margin-top: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .categoriesContainer h2 {
-    font-family: "Nunito", sans-serif;
     font-size: 0.8rem;
   }
   .furniture {
-    position: relative;
     width: 110px;
-    height: 110px;
-    overflow: hidden;
-    margin-right: 0px;
-    margin-bottom: 5px;
-  }
-  .furniture:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .furniture img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .furniture img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .furniture h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    -webkit-transform: translate(4%, -75%);
-            transform: translate(4%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
   }
   .skinCare {
-    position: relative;
     width: 110px;
-    height: 110px;
-    overflow: hidden;
-    margin-right: 0;
-    margin-left: 0px;
-  }
-  .skinCare:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.6;
-  }
-  .skinCare img {
-    width: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .skinCare img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   .skinCare h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     -webkit-transform: translate(55%, -75%);
             transform: translate(55%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
-  }
-  .containerTwo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 5px;
   }
   .kitchen {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 110px;
-    height: 110px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    margin-right: 0;
-  }
-  .kitchen:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .kitchen img {
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .kitchen img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   .kitchen h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     -webkit-transform: translate(71%, -75%);
             transform: translate(71%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
-  }
-  .electronics {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 110px;
-    height: 110px;
-    overflow: hidden;
-    margin-left: 0px;
-  }
-  .electronics:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.8;
-  }
-  .electronics img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: -webkit-transform ease-in-out 0.25s;
-    transition: -webkit-transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s;
-    transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
-    cursor: pointer;
-  }
-  .electronics img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
   }
   .electronics h2 {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     -webkit-transform: translate(30%, -75%);
             transform: translate(30%, -75%);
-    z-index: 1;
-    cursor: pointer;
-    pointer-events: none;
-  }
-  .productsContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .productsContainer h2 {
-    text-align: center;
-    margin: 20px 0px 0px 0px;
-    font-family: "Lora", serif;
     font-size: 0.8rem;
   }
   .productsContainer hr {
     width: 100px;
-    border: none;
-    background: black;
-    border: 1px solid black;
-    border-radius: 50px;
-    margin-top: 4px;
-    margin-bottom: 20px;
   }
   .cardsContainer {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-columns: 110px;
+    -ms-grid-columns: (110px)[1];
     grid-template-columns: repeat(1, 110px);
-    gap: 5px;
-  }
-  .cardsContainer a {
-    text-decoration: none;
-    color: black;
-  }
-  .adContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 60px;
   }
   .adTextContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 100%;
-    height: 150px;
-  }
-  .adTextContainer h3 {
-    font-family: "Nunito", sans-serif;
-    font-size: 1.2rem;
-  }
-  .adTextContainer p {
-    font-size: 0.9rem;
-    font-family: "Nunito", sans-serif;
-  }
-  .adPictureContainer {
-    display: none;
-  }
-  .adContainer2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 40px;
   }
   .adTextContainer2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin-bottom: 100px;
     width: 100%;
-    height: 150px;
-  }
-  .adTextContainer2 h3 {
-    font-family: "Nunito", sans-serif;
-    font-size: 1.2rem;
-  }
-  .adTextContainer2 p {
-    font-size: 0.9rem;
-    font-family: "Nunito", sans-serif;
-  }
-  .adPictureContainer2 {
-    display: none;
   }
 }

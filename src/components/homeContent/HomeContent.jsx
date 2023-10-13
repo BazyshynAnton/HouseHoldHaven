@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import { Button } from '@mui/material'
+import { Box, Button, Container } from '@mui/material'
 import TrendingSlider from '../trendingSlider/TrendingSlider'
 import Items from '../items/Items'
 
@@ -32,109 +32,129 @@ const HomeContent = () => {
   }
 
   return (
-    <div className={styles.superMain}>
-      <div className={styles.categoriesContainer}>
-        <NavLink
-          to="/categories/furnitures"
-          onClick={() => window.scrollTo(0, 0)}>
-          <div className={styles.furniture}>
-            <img src={furniture} alt="furniture" />
-            <h2>Live comfortably</h2>
-          </div>
-        </NavLink>
-        <NavLink
-          to="/categories/skincare"
-          onClick={() => window.scrollTo(0, 0)}>
-          <div className={styles.skinCare}>
-            <img src={skinCarePic} alt="skincare" />
-            <h2>Skincare</h2>
-          </div>
-        </NavLink>
-
-        <div className={styles.containerTwo}>
+    <Container>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          marginTop: '50px',
+        }}
+      >
+        <Box className={styles.categoriesContainer}>
           <NavLink
-            to="/categories/kitchen"
-            onClick={() => window.scrollTo(0, 0)}>
-            <div className={styles.kitchen}>
-              <img src={kitchen} alt="kitchen" />
-              <h2>Kitchen</h2>
-            </div>
+            to="/categories/furnitures"
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <Box className={styles.furniture}>
+              <img src={furniture} alt="furniture" />
+              <h2>Live comfortably</h2>
+            </Box>
           </NavLink>
           <NavLink
-            to="/categories/electronics"
-            onClick={() => window.scrollTo(0, 0)}>
-            <div className={styles.electronics}>
-              <img src={electronics} alt="electronics" />
-              <h2>Electronics</h2>
-            </div>
+            to="/categories/skincare"
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <Box className={styles.skinCare}>
+              <img src={skinCarePic} alt="skincare" />
+              <h2>Skincare</h2>
+            </Box>
           </NavLink>
-        </div>
-      </div>
 
-      <div className={styles.productsContainer}>
-        <h2>OUR PRODUCTS</h2>
-        <hr />
-        <div className={styles.cardsContainer}>
-          {/*only the first 8 products from the array are displayed*/}
-          {products.slice(0, 8).map((product) => {
-            return (
-              <NavLink
-                key={product.id}
-                to={`/categories/product/${product.id}`}
-                onClick={() => window.scrollTo(0, 0)}>
-                <Items
+          <Box className={styles.containerTwo}>
+            <NavLink
+              to="/categories/kitchen"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              <Box className={styles.kitchen}>
+                <img src={kitchen} alt="kitchen" />
+                <h2>Kitchen</h2>
+              </Box>
+            </NavLink>
+            <NavLink
+              to="/categories/electronics"
+              onClick={() => window.scrollTo(0, 0)}
+            >
+              <Box className={styles.electronics}>
+                <img src={electronics} alt="electronics" />
+                <h2>Electronics</h2>
+              </Box>
+            </NavLink>
+          </Box>
+        </Box>
+
+        <Box className={styles.productsContainer}>
+          <h2>OUR PRODUCTS</h2>
+          <hr />
+          <Box className={styles.cardsContainer}>
+            {/*only the first 8 products from the array are displayed*/}
+            {products.slice(0, 8).map((product) => {
+              return (
+                <NavLink
                   key={product.id}
-                  img1={product.img1}
-                  name={product.name}
-                  price={product.price}
-                />
+                  to={`/categories/product/${product.id}`}
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  <Items
+                    key={product.id}
+                    img1={product.img1}
+                    name={product.name}
+                    price={product.price}
+                  />
+                </NavLink>
+              )
+            })}
+          </Box>
+        </Box>
+
+        {/*ad block*/}
+        <Box className={styles.adContainer}>
+          <Box className={styles.adTextContainer}>
+            <Box>
+              <h3>Creative harmonius living</h3>
+              <p>
+                Our Products are all made to standart sizes <br /> so that you
+                can mix and match them freely.
+              </p>
+              <NavLink
+                to="/categories/all"
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                <Button sx={stylesForButton.button}>SHOP NOW</Button>
               </NavLink>
-            )
-          })}
-        </div>
-      </div>
+            </Box>
+          </Box>
+          <Box className={styles.adPictureContainer}>
+            <img src={harmonius} />
+          </Box>
+        </Box>
 
-      {/*ad block*/}
-      <div className={styles.adContainer}>
-        <div className={styles.adTextContainer}>
-          <div>
-            <h3>Creative harmonius living</h3>
-            <p>
-              Our Products are all made to standart sizes <br /> so that you can
-              mix and match them freely.
-            </p>
-            <NavLink to="/categories/all" onClick={() => window.scrollTo(0, 0)}>
-              <Button sx={stylesForButton.button}>SHOP NOW</Button>
-            </NavLink>
-          </div>
-        </div>
-        <div className={styles.adPictureContainer}>
-          <img src={harmonius} />
-        </div>
-      </div>
+        {/*recommended products*/}
+        <TrendingSlider />
 
-      {/*recommended products*/}
-      <TrendingSlider />
-
-      {/*ad block*/}
-      <div className={styles.adContainer2}>
-        <div className={styles.adPictureContainer2}>
-          <img src={comfortable} alt="Shop" />
-        </div>
-        <div className={styles.adTextContainer2}>
-          <div>
-            <h3>Comfortable living</h3>
-            <p>
-              Our Products are all made to standart sizes <br /> so that you can
-              mix and match them freely.
-            </p>
-            <NavLink to="/categories/all" onClick={() => window.scrollTo(0, 0)}>
-              <Button sx={stylesForButton.button}>SHOP NOW</Button>
-            </NavLink>
-          </div>
-        </div>
-      </div>
-    </div>
+        {/*ad block*/}
+        <Box className={styles.adContainer2}>
+          <Box className={styles.adPictureContainer2}>
+            <img src={comfortable} alt="Shop" />
+          </Box>
+          <Box className={styles.adTextContainer2}>
+            <Box>
+              <h3>Comfortable living</h3>
+              <p>
+                Our Products are all made to standart sizes <br /> so that you
+                can mix and match them freely.
+              </p>
+              <NavLink
+                to="/categories/all"
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                <Button sx={stylesForButton.button}>SHOP NOW</Button>
+              </NavLink>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+    </Container>
   )
 }
 

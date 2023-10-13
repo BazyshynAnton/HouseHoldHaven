@@ -1,13 +1,8 @@
 .categoriesContainer {
-  .superMain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   margin-top: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   h2 {
     font-family: 'Nunito', sans-serif;
@@ -302,1803 +297,336 @@
 }
 
 @media (max-width: 1090px) {
-  .superMain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .categoriesContainer {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
     h2 {
-      font-family: 'Nunito', sans-serif;
       font-size: 1.6rem;
     }
   }
 
   .furniture {
-    position: relative;
     width: 400px;
-    height: 310px;
-    margin-right: 10px;
-    overflow: hidden;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
-    h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(15%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
   }
 
   .skinCare {
-    position: relative;
     width: 260px;
-    height: 310px;
-    margin-right: 10px;
-    overflow: hidden;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.6;
-    }
-
-    img {
-      width: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
-    h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(25%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
   }
 
   .containerTwo {
-    display: flex;
     width: 190px;
-    flex-direction: column;
   }
 
   .kitchen {
-    position: relative;
-    display: flex;
-    height: 150px;
     width: 190px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      height: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
-    h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(12%, -50%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
   }
 
   .electronics {
-    position: relative;
-    display: flex;
-    height: 150px;
     width: 190px;
-    overflow: hidden;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
-    h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(8%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
-  }
-
-  .productsContainer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    align-items: center;
-    h2 {
-      text-align: center;
-      margin: 20px 0px 0px 0px;
-      font-family: 'Lora', serif;
-      font-size: 1.4rem;
-    }
-    hr {
-      width: 500px;
-      border: none;
-      background: black;
-      border: 1px solid black;
-      border-radius: 50px;
-      margin-top: 4px;
-      margin-bottom: 20px;
-    }
-  }
-
-  .cardsContainer {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(4, 200px);
-    gap: 20px;
-
-    a {
-      text-decoration: none;
-      color: black;
-    }
-  }
-
-  .adContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 40px;
-  }
-
-  .adTextContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 400px;
-    height: 250px;
-    h3 {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1.6rem;
-    }
-
-    p {
-      font-size: 0.9rem;
-      font-family: 'Nunito', sans-serif;
-    }
-  }
-
-  .adPictureContainer {
-    width: 400px;
-    height: 250px;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .adContainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 40px;
-  }
-
-  .adTextContainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 400px;
-    height: 250px;
-
-    h3 {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1.6rem;
-    }
-
-    p {
-      font-size: 0.9rem;
-      font-family: 'Nunito', sans-serif;
-    }
-  }
-
-  .adPictureContainer2 {
-    width: 400px;
-    height: 250px;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
 }
 
 @media (max-width: 930px) {
-  .superMain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .categoriesContainer {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     h2 {
-      font-family: 'Nunito', sans-serif;
       font-size: 1.5rem;
     }
   }
 
   .furniture {
-    position: relative;
     width: 310px;
     height: 280px;
-    margin-right: 10px;
-    overflow: hidden;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
-    h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(15%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
   }
 
   .skinCare {
-    position: relative;
     width: 250px;
     height: 280px;
-    margin-right: 10px;
-    overflow: hidden;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.6;
-    }
-
-    img {
-      width: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
-    h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(25%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
   }
 
   .containerTwo {
-    display: flex;
     width: 170px;
-    flex-direction: column;
   }
 
   .kitchen {
-    position: relative;
-    display: flex;
     height: 135px;
     width: 170px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      height: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
-    h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(12%, -50%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
   }
 
   .electronics {
-    position: relative;
-    display: flex;
     height: 135px;
     width: 170px;
-    overflow: hidden;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
-    h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(8%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
-  }
-
-  .productsContainer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    align-items: center;
-    h2 {
-      text-align: center;
-      margin: 20px 0px 0px 0px;
-      font-family: 'Lora', serif;
-      font-size: 1.4rem;
-    }
-    hr {
-      width: 500px;
-      border: none;
-      background: black;
-      border: 1px solid black;
-      border-radius: 50px;
-      margin-top: 4px;
-      margin-bottom: 20px;
-    }
   }
 
   .cardsContainer {
-    display: grid;
-    justify-content: center;
     grid-template-columns: repeat(4, 165px);
     gap: 5px;
-
-    a {
-      text-decoration: none;
-      color: black;
-    }
-  }
-
-  .adContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 40px;
   }
 
   .adTextContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     width: 300px;
     height: 200px;
     h3 {
-      font-family: 'Nunito', sans-serif;
       font-size: 1.2rem;
-    }
-
-    p {
-      font-size: 0.9rem;
-      font-family: 'Nunito', sans-serif;
     }
   }
 
   .adPictureContainer {
     width: 300px;
     height: 200px;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .adContainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 40px;
   }
 
   .adTextContainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     width: 300px;
     height: 200px;
-
-    h3 {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1.6rem;
-    }
-
-    p {
-      font-size: 0.9rem;
-      font-family: 'Nunito', sans-serif;
-    }
   }
 
   .adPictureContainer2 {
     width: 300px;
     height: 200px;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
 }
 
 @media (max-width: 800px) {
-  .superMain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .categoriesContainer {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    h2 {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1.5rem;
-    }
-  }
-
   .furniture {
-    position: relative;
     width: 250px;
     height: 270px;
-    margin-right: 10px;
-    overflow: hidden;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
-    h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(15%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
   }
 
   .skinCare {
-    position: relative;
     width: 200px;
     height: 270px;
-    margin-right: 10px;
-    overflow: hidden;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.6;
-    }
-
-    img {
-      width: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
-    h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(25%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
   }
 
   .containerTwo {
-    display: flex;
     width: 150px;
-    flex-direction: column;
   }
 
   .kitchen {
-    position: relative;
-    display: flex;
     width: 150px;
     height: 130px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      height: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
-    h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(12%, -50%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
   }
 
   .electronics {
-    position: relative;
-    display: flex;
     width: 150px;
     height: 130px;
-    overflow: hidden;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
-    h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(8%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
   }
 
   .productsContainer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    align-items: center;
     h2 {
-      text-align: center;
-      margin: 20px 0px 0px 0px;
-      font-family: 'Lora', serif;
       font-size: 1.3rem;
     }
     hr {
       width: 400px;
-      border: none;
-      background: black;
-      border: 1px solid black;
-      border-radius: 50px;
-      margin-top: 4px;
-      margin-bottom: 20px;
     }
   }
 
   .cardsContainer {
-    display: grid;
-    justify-content: center;
     grid-template-columns: repeat(4, 142px);
-    gap: 5px;
-
-    a {
-      text-decoration: none;
-      color: black;
-    }
-  }
-
-  .adContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 40px;
   }
 
   .adTextContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     width: 260px;
     height: 150px;
     h3 {
-      font-family: 'Nunito', sans-serif;
       font-size: 1rem;
     }
 
     p {
       font-size: 0.8rem;
-      font-family: 'Nunito', sans-serif;
     }
   }
 
   .adPictureContainer {
     width: 260px;
     height: 150px;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .adContainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 40px;
   }
 
   .adTextContainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     width: 260px;
     height: 150px;
 
     h3 {
-      font-family: 'Nunito', sans-serif;
       font-size: 1rem;
     }
 
     p {
       font-size: 0.8rem;
-      font-family: 'Nunito', sans-serif;
     }
   }
 
   .adPictureContainer2 {
     width: 260px;
     height: 150px;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
 }
 
 @media (max-width: 670px) {
-  .superMain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .categoriesContainer {
-    margin-top: 30px;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 
     h2 {
-      font-family: 'Nunito', sans-serif;
       font-size: 1.3rem;
     }
   }
 
   .furniture {
-    position: relative;
     width: 240px;
     height: 200px;
-    overflow: hidden;
     margin-right: 5px;
     margin-bottom: 5px;
 
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
     h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
       transform: translate(25%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
     }
   }
 
   .skinCare {
-    position: relative;
     width: 240px;
     height: 200px;
-    overflow: hidden;
     margin-right: 0;
     margin-left: 5px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.6;
-    }
-
-    img {
-      width: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
+    margin-bottom: 5px;
 
     h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
       transform: translate(90%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
     }
   }
 
   .containerTwo {
-    display: flex;
     justify-content: center;
     flex-direction: row;
     margin-top: 5px;
   }
 
   .kitchen {
-    position: relative;
-    display: flex;
     width: 200px;
-    height: 130px;
-    margin-bottom: 10px;
-    overflow: hidden;
     margin-right: 5px;
 
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      height: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
     h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
       transform: translate(90%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
     }
   }
 
   .electronics {
-    position: relative;
-    display: flex;
     width: 200px;
-    height: 130px;
-    overflow: hidden;
     margin-left: 5px;
 
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
     h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
       transform: translate(45%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
-  }
-
-  .productsContainer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    align-items: center;
-    h2 {
-      text-align: center;
-      margin: 20px 0px 0px 0px;
-      font-family: 'Lora', serif;
-      font-size: 1.3rem;
-    }
-    hr {
-      width: 400px;
-      border: none;
-      background: black;
-      border: 1px solid black;
-      border-radius: 50px;
-      margin-top: 4px;
-      margin-bottom: 20px;
     }
   }
 
   .cardsContainer {
-    display: grid;
-    justify-content: center;
     grid-template-columns: repeat(3, 142px);
-    gap: 5px;
-
-    a {
-      text-decoration: none;
-      color: black;
-    }
-  }
-
-  .adContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 40px;
   }
 
   .adTextContainer {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    width: 260px;
-    height: 150px;
-    h3 {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1rem;
-    }
-
-    p {
-      font-size: 0.8rem;
-      font-family: 'Nunito', sans-serif;
-    }
-  }
-
-  .adPictureContainer {
-    width: 260px;
-    height: 150px;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .adContainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 40px;
-  }
-
-  .adTextContainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 260px;
-    height: 150px;
-
-    h3 {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1rem;
-    }
-
-    p {
-      font-size: 0.8rem;
-      font-family: 'Nunito', sans-serif;
-    }
-  }
-
-  .adPictureContainer2 {
-    width: 260px;
-    height: 150px;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
 }
 
 @media (max-width: 570px) {
-  .superMain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .categoriesContainer {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
     h2 {
-      font-family: 'Nunito', sans-serif;
       font-size: 1.1rem;
     }
   }
 
   .furniture {
-    position: relative;
     width: 190px;
     height: 150px;
-    overflow: hidden;
-    margin-right: 5px;
-    margin-bottom: 5px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
 
     h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
       transform: translate(20%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
     }
   }
 
   .skinCare {
-    position: relative;
     width: 190px;
     height: 150px;
-    overflow: hidden;
-    margin-right: 0;
-    margin-left: 5px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.6;
-    }
-
-    img {
-      width: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
 
     h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(75%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
+      transform: translate(75%, -83%);
     }
-  }
-
-  .containerTwo {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 5px;
   }
 
   .kitchen {
-    position: relative;
-    display: flex;
     width: 150px;
     height: 150px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    margin-right: 5px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      height: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
 
     h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
       transform: translate(75%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
     }
   }
 
   .electronics {
-    position: relative;
-    display: flex;
     width: 150px;
     height: 150px;
-    overflow: hidden;
-    margin-left: 5px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
 
     h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
       transform: translate(33%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
-  }
-
-  .productsContainer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    align-items: center;
-    h2 {
-      text-align: center;
-      margin: 20px 0px 0px 0px;
-      font-family: 'Lora', serif;
-      font-size: 1.3rem;
-    }
-    hr {
-      width: 400px;
-      border: none;
-      background: black;
-      border: 1px solid black;
-      border-radius: 50px;
-      margin-top: 4px;
-      margin-bottom: 20px;
     }
   }
 
   .cardsContainer {
-    display: grid;
-    justify-content: center;
     grid-template-columns: repeat(3, 142px);
-    gap: 5px;
-
-    a {
-      text-decoration: none;
-      color: black;
-    }
-  }
-
-  .adContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 40px;
   }
 
   .adTextContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     width: 240px;
-    height: 150px;
-    h3 {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1rem;
-    }
-
-    p {
-      font-size: 0.8rem;
-      font-family: 'Nunito', sans-serif;
-    }
   }
 
   .adPictureContainer {
     width: 200px;
     height: 145px;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .adContainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 40px;
   }
 
   .adTextContainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     width: 240px;
-    height: 150px;
-
-    h3 {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1rem;
-    }
-
-    p {
-      font-size: 0.8rem;
-      font-family: 'Nunito', sans-serif;
-    }
   }
 
   .adPictureContainer2 {
     width: 200px;
     height: 145px;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
 }
 
 @media (max-width: 460px) {
-  .superMain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .categoriesContainer {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    h2 {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1.1rem;
-    }
-  }
-
   .furniture {
-    position: relative;
     width: 160px;
-    height: 150px;
-    overflow: hidden;
-    margin-right: 5px;
-    margin-bottom: 5px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
 
     h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
       transform: translate(8%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
     }
   }
 
   .skinCare {
-    position: relative;
     width: 160px;
-    height: 150px;
-    overflow: hidden;
-    margin-right: 0;
-    margin-left: 5px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.6;
-    }
-
-    img {
-      width: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
 
     h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(60%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
-  }
-
-  .containerTwo {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 5px;
-  }
-
-  .kitchen {
-    position: relative;
-    display: flex;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    margin-right: 5px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      height: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
-    h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(75%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
-  }
-
-  .electronics {
-    position: relative;
-    display: flex;
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    margin-left: 5px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
-    h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(33%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
+      transform: translate(60%, -85%);
     }
   }
 
   .productsContainer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    align-items: center;
     h2 {
-      text-align: center;
-      margin: 20px 0px 0px 0px;
-      font-family: 'Lora', serif;
       font-size: 1.2rem;
     }
     hr {
       width: 300px;
-      border: none;
-      background: black;
-      border: 1px solid black;
-      border-radius: 50px;
-      margin-top: 4px;
-      margin-bottom: 20px;
     }
   }
 
   .cardsContainer {
-    display: grid;
-    justify-content: center;
     grid-template-columns: repeat(1, 230px);
-    gap: 5px;
-
-    a {
-      text-decoration: none;
-      color: black;
-    }
-  }
-
-  .adContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 40px;
   }
 
   .adTextContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     width: 260px;
-    height: 150px;
     h3 {
-      font-family: 'Nunito', sans-serif;
       font-size: 1.2rem;
     }
 
     p {
       font-size: 0.9rem;
-      font-family: 'Nunito', sans-serif;
     }
   }
 
@@ -2106,30 +634,15 @@
     display: none;
   }
 
-  .adContainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 40px;
-  }
-
   .adTextContainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     width: 260px;
-    height: 150px;
 
     h3 {
-      font-family: 'Nunito', sans-serif;
       font-size: 1.2rem;
     }
 
     p {
       font-size: 0.9rem;
-      font-family: 'Nunito', sans-serif;
     }
   }
 
@@ -2139,905 +652,176 @@
 }
 
 @media (max-width: 400px) {
-  .superMain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .categoriesContainer {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
     h2 {
-      font-family: 'Nunito', sans-serif;
       font-size: 1rem;
     }
   }
 
   .furniture {
-    position: relative;
     width: 140px;
     height: 140px;
-    overflow: hidden;
-    margin-right: 5px;
-    margin-bottom: 5px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
-    h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(8%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
   }
 
   .skinCare {
-    position: relative;
     width: 140px;
     height: 140px;
-    overflow: hidden;
-    margin-right: 0;
-    margin-left: 5px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.6;
-    }
-
-    img {
-      width: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
 
     img:hover {
       transform: scale(1.1);
     }
 
     h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(60%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
+      transform: translate(60%, -80%);
     }
-  }
-
-  .containerTwo {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 5px;
   }
 
   .kitchen {
-    position: relative;
-    display: flex;
     width: 140px;
     height: 140px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    margin-right: 5px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      height: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
-    h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(75%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
   }
 
   .electronics {
-    position: relative;
-    display: flex;
     width: 140px;
     height: 140px;
-    overflow: hidden;
-    margin-left: 5px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
-    h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(33%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
   }
 
   .productsContainer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    align-items: center;
-    h2 {
-      text-align: center;
-      margin: 20px 0px 0px 0px;
-      font-family: 'Lora', serif;
-      font-size: 1.2rem;
-    }
     hr {
       width: 250px;
-      border: none;
-      background: black;
-      border: 1px solid black;
-      border-radius: 50px;
-      margin-top: 4px;
-      margin-bottom: 20px;
-      text-align: center;
     }
   }
 
   .cardsContainer {
-    display: grid;
-    justify-content: center;
     grid-template-columns: repeat(1, 220px);
-    gap: 5px;
-
-    a {
-      text-decoration: none;
-      color: black;
-    }
-  }
-
-  .adContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 40px;
-  }
-
-  .adTextContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 260px;
-    height: 150px;
-    h3 {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1.2rem;
-    }
-
-    p {
-      font-size: 0.9rem;
-      font-family: 'Nunito', sans-serif;
-    }
-  }
-
-  .adPictureContainer {
-    display: none;
-  }
-
-  .adContainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 40px;
-  }
-
-  .adTextContainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 260px;
-    height: 150px;
-
-    h3 {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1.2rem;
-    }
-
-    p {
-      font-size: 0.9rem;
-      font-family: 'Nunito', sans-serif;
-    }
-  }
-
-  .adPictureContainer2 {
-    display: none;
   }
 }
 
 @media (max-width: 355px) {
-  .superMain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .categoriesContainer {
-    margin-top: 30px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     h2 {
-      font-family: 'Nunito', sans-serif;
       font-size: 1.2rem;
     }
   }
 
   .furniture {
-    position: relative;
     width: 160px;
     height: 110px;
-    overflow: hidden;
     margin-right: 0px;
-    margin-bottom: 5px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
 
     h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
       transform: translate(4%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
     }
   }
 
   .skinCare {
-    position: relative;
-    width: 140px;
     height: 110px;
-    overflow: hidden;
-    margin-right: 0;
     margin-left: 0px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.6;
-    }
-
-    img {
-      width: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
+    margin-bottom: 0px;
 
     h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
       transform: translate(45%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
     }
   }
 
   .containerTwo {
-    display: flex;
-    justify-content: center;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: 5px;
   }
 
   .kitchen {
-    position: relative;
-    display: flex;
     width: 120px;
     height: 110px;
-    margin-bottom: 10px;
-    overflow: hidden;
     margin-right: 0;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      height: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
+    margin-bottom: 5px;
 
     h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
       transform: translate(43%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
     }
   }
 
   .electronics {
-    position: relative;
-    display: flex;
     width: 110px;
     height: 110px;
-    overflow: hidden;
     margin-left: 0px;
 
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
     h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
       transform: translate(7%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
     }
   }
 
   .productsContainer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    align-items: center;
     h2 {
-      text-align: center;
-      margin: 20px 0px 0px 0px;
-      font-family: 'Lora', serif;
       font-size: 1rem;
     }
     hr {
       width: 150px;
-      border: none;
-      background: black;
-      border: 1px solid black;
-      border-radius: 50px;
-      margin-top: 4px;
-      margin-bottom: 20px;
     }
   }
 
   .cardsContainer {
-    display: grid;
-    justify-content: center;
     grid-template-columns: repeat(1, 190px);
-    gap: 5px;
-
-    a {
-      text-decoration: none;
-      color: black;
-    }
   }
 
   .adContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
     margin-top: 60px;
-  }
-
-  .adTextContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 260px;
-    height: 150px;
-    h3 {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1.2rem;
-    }
-
-    p {
-      font-size: 0.9rem;
-      font-family: 'Nunito', sans-serif;
-    }
-  }
-
-  .adPictureContainer {
-    display: none;
-  }
-
-  .adContainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 40px;
-  }
-
-  .adTextContainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 260px;
-    height: 150px;
-
-    h3 {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1.2rem;
-    }
-
-    p {
-      font-size: 0.9rem;
-      font-family: 'Nunito', sans-serif;
-    }
-  }
-
-  .adPictureContainer2 {
-    display: none;
   }
 }
 
 @media (max-width: 270px) {
-  .superMain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .categoriesContainer {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     h2 {
-      font-family: 'Nunito', sans-serif;
       font-size: 0.8rem;
     }
   }
 
   .furniture {
-    position: relative;
     width: 110px;
-    height: 110px;
-    overflow: hidden;
-    margin-right: 0px;
-    margin-bottom: 5px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
-    h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      transform: translate(4%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
-    }
   }
 
   .skinCare {
-    position: relative;
     width: 110px;
-    height: 110px;
-    overflow: hidden;
-    margin-right: 0;
-    margin-left: 0px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.6;
-    }
-
-    img {
-      width: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
 
     h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
       transform: translate(55%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
     }
-  }
-
-  .containerTwo {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
   }
 
   .kitchen {
-    position: relative;
-    display: flex;
     width: 110px;
-    height: 110px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    margin-right: 0;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      height: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
 
     h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
       transform: translate(71%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
     }
   }
 
   .electronics {
-    position: relative;
-    display: flex;
-    width: 110px;
-    height: 110px;
-    overflow: hidden;
-    margin-left: 0px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.8;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-
-      transition: transform ease-in-out 0.25s;
-      cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-
     h2 {
-      color: white;
-      position: absolute;
-      bottom: 0;
-      left: 0;
       transform: translate(30%, -75%);
-      z-index: 1;
-      cursor: pointer;
-      pointer-events: none;
     }
   }
 
   .productsContainer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    align-items: center;
     h2 {
-      text-align: center;
-      margin: 20px 0px 0px 0px;
-      font-family: 'Lora', serif;
       font-size: 0.8rem;
     }
     hr {
       width: 100px;
-      border: none;
-      background: black;
-      border: 1px solid black;
-      border-radius: 50px;
-      margin-top: 4px;
-      margin-bottom: 20px;
     }
   }
 
   .cardsContainer {
-    display: grid;
-    justify-content: center;
     grid-template-columns: repeat(1, 110px);
-    gap: 5px;
-
-    a {
-      text-decoration: none;
-      color: black;
-    }
-  }
-
-  .adContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 60px;
   }
 
   .adTextContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     width: 100%;
-    height: 150px;
-    h3 {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1.2rem;
-    }
-
-    p {
-      font-size: 0.9rem;
-      font-family: 'Nunito', sans-serif;
-    }
-  }
-
-  .adPictureContainer {
-    display: none;
-  }
-
-  .adContainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-top: 40px;
   }
 
   .adTextContainer2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 100px;
     width: 100%;
-    height: 150px;
-
-    h3 {
-      font-family: 'Nunito', sans-serif;
-      font-size: 1.2rem;
-    }
-
-    p {
-      font-size: 0.9rem;
-      font-family: 'Nunito', sans-serif;
-    }
-  }
-
-  .adPictureContainer2 {
-    display: none;
   }
 }

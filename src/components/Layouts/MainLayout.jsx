@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom'
-import { Container } from '@mui/material'
+import { Box } from '@mui/material'
 import Navigation from '../navigation/Navigation'
 import Footer from '../footer/Footer'
 
@@ -8,21 +8,20 @@ const MainLayout = () => {
   return (
     //vertical column structure using Flexbox.
     //MinHeight: '100vh' sets the viewport's minimum height to keep the height even when the content is small!!
-    <div
+    <Box
       style={{
         display: 'flex',
         flexDirection: 'column',
         minHeight: '100vh',
-      }}>
-      <div style={{ flex: '1' }}>
-        <Container>
-          <Navigation />
-          <Outlet />
-        </Container>
-      </div>
+      }}
+    >
+      <Box style={{ flex: '1' }}>
+        <Navigation />
+        <Outlet />
+      </Box>
       {/*flexShrink: 0 prevents the Footer component from shrinking when there is not enough space*/}
       <Footer style={{ flexShrink: 0 }} />
-    </div>
+    </Box>
   )
 }
 
