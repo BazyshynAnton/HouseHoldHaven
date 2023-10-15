@@ -1,9 +1,8 @@
 import { NavLink } from 'react-router-dom'
+import { Box } from '@mui/material'
 import Items from '../items/Items'
 
 import products from '../../data/products'
-
-import styles from './TrendingSlider.module.css'
 
 function TrendingItem() {
   //(including 8, but not including 15), select 7 products to display.
@@ -15,10 +14,12 @@ function TrendingItem() {
   return (
     <>
       {filteredProducts.map((product) => (
-        <div className={styles.containerProduct} key={product.id}>
+        <Box key={product.id}>
           <NavLink
             onClick={handleNavLinkClick}
-            to={`/categories/product/${product.id}`}>
+            to={`/categories/product/${product.id}`}
+            style={{ textDecoration: 'none', color: 'black' }}
+          >
             <Items
               key={product.id}
               img1={product.img1}
@@ -26,7 +27,7 @@ function TrendingItem() {
               price={product.price}
             />
           </NavLink>
-        </div>
+        </Box>
       ))}
     </>
   )

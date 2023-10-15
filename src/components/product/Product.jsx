@@ -7,6 +7,7 @@ import DoneOutlineIcon from '@mui/icons-material/DoneOutline'
 import products from '../../data/products'
 
 import styles from './Product.module.css'
+import { Box, Container } from '@mui/material'
 
 const Product = () => {
   const [notificationMessage, setNotificationMessage] = useState('') //contains a notification message that appears when an item is added to the cart
@@ -99,79 +100,83 @@ const Product = () => {
   }
 
   return (
-    <div className={styles.productMainContainer}>
-      <h2>{currentProduct.name}</h2>
-      <div className={styles.productDiv}>
-        <div className={styles.productLeft}>
-          <div className={styles.bigImg}>
-            <img src={image} alt="product" />
-          </div>
-          <div className={styles.smallImgs}>
-            <div className={styles.imgsSmallBlock}>
-              <img
-                onMouseOver={changeImage}
-                src={currentProduct.img2}
-                alt="product"
-              />
-            </div>
-            <div className={styles.imgsSmallBlock}>
-              <img
-                onMouseOver={changeImage}
-                src={currentProduct.img3}
-                alt="product"
-              />
-            </div>
-            <div className={styles.imgsSmallBlock}>
-              <img
-                onMouseOver={changeImage}
-                src={currentProduct.img4}
-                alt="product"
-              />
-            </div>
-          </div>
-        </div>
+    <Container>
+      <Box className={styles.productMainContainer}>
+        <h2>{currentProduct.name}</h2>
+        <Box className={styles.productBox}>
+          <Box className={styles.productLeft}>
+            <Box className={styles.bigImg}>
+              <img src={image} alt="product" />
+            </Box>
+            <Box className={styles.smallImgs}>
+              <Box className={styles.imgsSmallBlock}>
+                <img
+                  onMouseOver={changeImage}
+                  src={currentProduct.img2}
+                  alt="product"
+                />
+              </Box>
+              <Box className={styles.imgsSmallBlock}>
+                <img
+                  onMouseOver={changeImage}
+                  src={currentProduct.img3}
+                  alt="product"
+                />
+              </Box>
+              <Box className={styles.imgsSmallBlock}>
+                <img
+                  onMouseOver={changeImage}
+                  src={currentProduct.img4}
+                  alt="product"
+                />
+              </Box>
+            </Box>
+          </Box>
 
-        <div className={styles.productRight}>
-          <div className={styles.productText}>
-            <p>{currentProduct.description}</p>
-          </div>
-          <div className={styles.infoContainer}>
-            <h3>Quantity</h3>
-            <div className={styles.counterContainer}>
-              <button className={styles.controlBtn} onClick={decrease}>
-                -
+          <Box className={styles.productRight}>
+            <Box className={styles.productText}>
+              <p>{currentProduct.description}</p>
+            </Box>
+            <Box className={styles.infoContainer}>
+              <h3>Quantity</h3>
+              <Box className={styles.counterContainer}>
+                <button className={styles.controlBtn} onClick={decrease}>
+                  -
+                </button>
+                <span className={styles.counterOutput}>{counter}</span>
+                <button className={styles.controlBtn} onClick={increase}>
+                  +
+                </button>
+              </Box>
+              <h3>{calcPrice(counter)}.00$</h3>
+            </Box>
+            <Box className={styles.btnContainer}>
+              <button
+                className={styles.addToCartButton}
+                onClick={handleAddToCart}
+              >
+                ADD TO CART
               </button>
-              <span className={styles.counterOutput}>{counter}</span>
-              <button className={styles.controlBtn} onClick={increase}>
-                +
-              </button>
-            </div>
-            <h3>{calcPrice(counter)}.00$</h3>
-          </div>
-          <div className={styles.btnContainer}>
-            <button
-              className={styles.addToCartButton}
-              onClick={handleAddToCart}>
-              ADD TO CART
-            </button>
-            <button className={styles.buyBtn}>BUY NOW</button>
-          </div>
-        </div>
-      </div>
-      {/* Notification message */}
-      <div
-        className={`${styles.notification} ${
-          notificationVisible
-            ? styles.notificationShow
-            : styles.notificationHide
-        }`}>
-        <p>
-          {notificationMessage}
-          <DoneOutlineIcon sx={{ color: 'green' }} />
-        </p>
-      </div>
-      <TrendingSlider />
-    </div>
+              <button className={styles.buyBtn}>BUY NOW</button>
+            </Box>
+          </Box>
+        </Box>
+        {/* Notification message */}
+        <Box
+          className={`${styles.notification} ${
+            notificationVisible
+              ? styles.notificationShow
+              : styles.notificationHide
+          }`}
+        >
+          <p>
+            {notificationMessage}
+            <DoneOutlineIcon sx={{ color: 'green' }} />
+          </p>
+        </Box>
+        <TrendingSlider />
+      </Box>
+    </Container>
   )
 }
 

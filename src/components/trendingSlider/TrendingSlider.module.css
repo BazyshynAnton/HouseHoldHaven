@@ -1,4 +1,5 @@
 .mainContainer {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,6 +26,12 @@
   font-size: 1.6rem;
 }
 
+.btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.4rem;
+}
 .btns button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,14 +52,6 @@
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
 }
-
-.btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 0.4rem;
-}
-
 .btns button:hover {
   background: #373737;
 }
@@ -75,524 +74,27 @@
   scrollbar-width: none;
 }
 
-.containerProduct a {
-  text-decoration: none;
-  color: black;
-}
-
 @media (max-width: 1490px) {
-  .mainContainer {
-    width: 1000px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 40px;
-  }
-  .titleBtns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .titleBtns h3 {
-    font-family: "Nunito";
     font-size: 1.4rem;
   }
   .btns button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: white;
-    background: black;
-    padding: 1rem;
-    border: none;
     height: 2.1rem;
     width: 2.1rem;
-    cursor: pointer;
-    -webkit-transition: all 0.1s ease-in;
-    transition: all 0.1s ease-in;
-  }
-  .btns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 0.4rem;
-  }
-  .btns button:hover {
-    background: #373737;
-  }
-  .rowContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 20px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    position: relative;
-    padding: 1rem 0.6rem;
-  }
-  .rowContainer::-webkit-scrollbar {
-    display: none;
-    /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .containerProduct a {
-    text-decoration: none;
-    color: black;
-  }
-}
-@media (max-width: 1020px) {
-  .mainContainer {
-    width: 800px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 40px;
-  }
-  .titleBtns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .titleBtns h3 {
-    font-family: "Nunito";
-    font-size: 1.4rem;
-  }
-  .btns button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: white;
-    background: black;
-    padding: 1rem;
-    border: none;
-    height: 2.1rem;
-    width: 2.1rem;
-    cursor: pointer;
-    -webkit-transition: all 0.1s ease-in;
-    transition: all 0.1s ease-in;
-  }
-  .btns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 0.4rem;
-  }
-  .btns button:hover {
-    background: #373737;
-  }
-  .rowContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 20px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    position: relative;
-    padding: 1rem 0.6rem;
-  }
-  .rowContainer::-webkit-scrollbar {
-    display: none;
-    /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .containerProduct a {
-    text-decoration: none;
-    color: black;
-  }
-}
-@media (max-width: 930px) {
-  .mainContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 40px;
-  }
-  .titleBtns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .titleBtns h3 {
-    font-family: "Nunito";
-    font-size: 1.4rem;
-  }
-  .btns button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: white;
-    background: black;
-    padding: 1rem;
-    border: none;
-    height: 2.1rem;
-    width: 2.1rem;
-    cursor: pointer;
-    -webkit-transition: all 0.1s ease-in;
-    transition: all 0.1s ease-in;
-  }
-  .btns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 0.4rem;
-  }
-  .btns button:hover {
-    background: #373737;
-  }
-  .rowContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 20px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    position: relative;
-    padding: 1rem 0.6rem;
-  }
-  .rowContainer::-webkit-scrollbar {
-    display: none;
-    /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .containerProduct a {
-    text-decoration: none;
-    color: black;
-  }
-}
-@media (max-width: 810px) {
-  .mainContainer {
-    width: 600px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 40px;
-  }
-  .titleBtns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .titleBtns h3 {
-    font-family: "Nunito";
-    font-size: 1.4rem;
-  }
-  .btns button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: white;
-    background: black;
-    padding: 1rem;
-    border: none;
-    height: 2.1rem;
-    width: 2.1rem;
-    cursor: pointer;
-    -webkit-transition: all 0.1s ease-in;
-    transition: all 0.1s ease-in;
-  }
-  .btns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 0.4rem;
-  }
-  .btns button:hover {
-    background: #373737;
-  }
-  .rowContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 20px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    position: relative;
-    padding: 1rem 0.6rem;
-  }
-  .rowContainer::-webkit-scrollbar {
-    display: none;
-    /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .containerProduct a {
-    text-decoration: none;
-    color: black;
-  }
-}
-@media (max-width: 612px) {
-  .mainContainer {
-    width: 400px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 40px;
-  }
-  .titleBtns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .titleBtns h3 {
-    font-family: "Nunito";
-    font-size: 1.4rem;
-  }
-  .btns button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: white;
-    background: black;
-    padding: 1rem;
-    border: none;
-    height: 2.1rem;
-    width: 2.1rem;
-    cursor: pointer;
-    -webkit-transition: all 0.1s ease-in;
-    transition: all 0.1s ease-in;
-  }
-  .btns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 0.4rem;
-  }
-  .btns button:hover {
-    background: #373737;
-  }
-  .rowContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 20px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    position: relative;
-    padding: 1rem 0.6rem;
-  }
-  .rowContainer::-webkit-scrollbar {
-    display: none;
-    /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .containerProduct a {
-    text-decoration: none;
-    color: black;
   }
 }
 @media (max-width: 410px) {
-  .mainContainer {
-    width: 200px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 40px;
-  }
-  .titleBtns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .titleBtns h3 {
-    font-family: "Nunito";
     font-size: 1.1rem;
   }
   .btns button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: white;
-    background: black;
-    padding: 1rem;
-    border: none;
     height: 1rem;
     width: 1rem;
-    cursor: pointer;
-    -webkit-transition: all 0.1s ease-in;
-    transition: all 0.1s ease-in;
-  }
-  .btns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 0.4rem;
-  }
-  .btns button:hover {
-    background: #373737;
-  }
-  .rowContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 20px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    position: relative;
-    padding: 1rem 0.6rem;
-  }
-  .rowContainer::-webkit-scrollbar {
-    display: none;
-    /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .containerProduct a {
-    text-decoration: none;
-    color: black;
   }
 }
 @media (max-width: 355px) {
   .mainContainer {
-    width: 150px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     margin-top: 60px;
-  }
-  .titleBtns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .titleBtns h3 {
-    font-family: "Nunito";
-    font-size: 1.1rem;
-  }
-  .btns button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: white;
-    background: black;
-    padding: 0.5rem;
-    border: none;
-    height: 1.5rem;
-    width: 1.5rem;
-    cursor: pointer;
-    -webkit-transition: all 0.1s ease-in;
-    transition: all 0.1s ease-in;
   }
   .btns {
     display: -webkit-box;
@@ -600,46 +102,20 @@
     display: flex;
     gap: 0.2rem;
   }
-  .btns button:hover {
-    background: #373737;
+  .btns button {
+    padding: 0.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
   }
   .rowContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 20px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    position: relative;
     padding: 1rem 0rem;
-  }
-  .rowContainer::-webkit-scrollbar {
-    display: none;
-    /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .containerProduct a {
-    text-decoration: none;
-    color: black;
   }
 }
 @media (max-width: 270px) {
   .mainContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     margin-top: 90px;
   }
   .titleBtns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -649,28 +125,7 @@
             flex-direction: column;
   }
   .titleBtns h3 {
-    font-family: "Nunito";
     font-size: 1rem;
-  }
-  .btns button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: white;
-    background: black;
-    padding: 0.5rem;
-    border: none;
-    height: 1.1rem;
-    width: 1.1rem;
-    cursor: pointer;
-    -webkit-transition: all 0.1s ease-in;
-    transition: all 0.1s ease-in;
   }
   .btns {
     display: -webkit-box;
@@ -678,28 +133,8 @@
     display: flex;
     gap: 0.2rem;
   }
-  .btns button:hover {
-    background: #373737;
-  }
-  .rowContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 20px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    position: relative;
-    padding: 1rem 0rem;
-  }
-  .rowContainer::-webkit-scrollbar {
-    display: none;
-    /* Hide scrollbar for IE, Edge and Firefox */
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .containerProduct a {
-    text-decoration: none;
-    color: black;
+  .btns button {
+    height: 1.1rem;
+    width: 1.1rem;
   }
 }

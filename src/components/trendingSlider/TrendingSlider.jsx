@@ -1,3 +1,4 @@
+import { Box, Container } from '@mui/material'
 import TrendingProducts from './TrendingProducts'
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore'
 import NavigateNextIcon from '@mui/icons-material/NavigateNext'
@@ -18,22 +19,24 @@ function TrendingSlider() {
   }
 
   return (
-    <div className={styles.mainContainer}>
-      <div className={styles.titleBtns}>
-        <h3>Trending Now</h3>
-        <div className={styles.btns}>
-          <button title="scroll left" onClick={slideLeft}>
-            <NavigateBeforeIcon />
-          </button>
-          <button title="scroll right" onClick={slideRight}>
-            <NavigateNextIcon />
-          </button>
-        </div>
-      </div>
-      <div className={styles.rowContainer} id="slider">
-        <TrendingProducts />
-      </div>
-    </div>
+    <Container>
+      <Box className={styles.mainContainer}>
+        <Box className={styles.titleBtns}>
+          <h3>Trending Now</h3>
+          <Box className={styles.btns}>
+            <button title="scroll left" onClick={slideLeft}>
+              <NavigateBeforeIcon />
+            </button>
+            <button title="scroll right" onClick={slideRight}>
+              <NavigateNextIcon />
+            </button>
+          </Box>
+        </Box>
+        <Box className={styles.rowContainer} id="slider">
+          <TrendingProducts />
+        </Box>
+      </Box>
+    </Container>
   )
 }
 

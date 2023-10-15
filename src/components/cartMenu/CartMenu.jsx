@@ -1,5 +1,6 @@
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
+import { Box } from '@mui/material'
 
 import CloseIcon from '@mui/icons-material/Close'
 import shoppingEmptyCart from '../../images/shoppingEmptyCart.jpg'
@@ -31,80 +32,137 @@ const CartMenu = ({ isOpen, handleCloseCartMenu }) => {
 
   return (
     //Style classes from CartMenu.module.css are added depending on the value of isOpen
-    <div
-      className={`${styles.cartMenu} ${isOpen ? styles.cartMenuOpened : ''}`}>
-      <div className={styles.txtContainer}>
+    <Box
+      className={`${styles.cartMenu} ${isOpen ? styles.cartMenuOpened : ''}`}
+    >
+      <Box className={styles.txtContainer}>
         <h3>Your Shopping Cart({cartProducts.length})</h3>
         <CloseIcon
           sx={{ fontSize: '1.8rem', cursor: 'pointer' }}
           onClick={handleCloseCartMenu}
         />
-      </div>
+      </Box>
 
       {
         //-check to see if there are items in shopping cart
       }
       {!cartProducts.length && (
-        <div className={styles.emptyContainer}>
-          <div className={styles.imgInCart}>
+        <Box className={styles.emptyContainer}>
+          <Box className={styles.imgInCart}>
             <img src={shoppingEmptyCart} alt="keep browsing" />
-          </div>
+          </Box>
           <p>Your cart is empty.</p>
           <button onClick={handleCloseCartMenu}>Keep Browsing</button>
-        </div>
+        </Box>
       )}
       {
         //-check to see if there are items in shopping cart
       }
       {!!cartProducts.length && (
-        <div className={styles.productContainer}>
-          <div className={styles.fullProductDiv}>
-            <div className={styles.fullProduct}>
+        <Box
+          sx={{
+            height: '100%',
+            padding: '0.2rem',
+            marginTop: '50px',
+            background: 'white',
+          }}
+        >
+          <Box className={styles.fullProductBox}>
+            <Box className={styles.fullProduct}>
               {cartProducts.map((product) => (
-                <div className={styles.cartProduct} key={product.id}>
-                  <div className={styles.leftImg}>
+                <Box className={styles.cartProduct} key={product.id}>
+                  <Box className={styles.leftImg}>
                     <img src={product.img1} />
-                  </div>
-                  <div className={styles.cartInfoMiddle}>
+                  </Box>
+                  <Box className={styles.cartInfoMiddle}>
                     <p>{product.name}</p>
 
-                    <div className={styles.cartBtns}>
+                    <Box
+                      sx={{ display: 'flex', border: '1px solid black' }}
+                      className={styles.cartBtns}
+                    >
                       <button
                         onClick={() =>
                           updateQuantity(product.id, product.quantity - 1)
-                        }>
+                        }
+                        style={{
+                          color: 'white',
+                          background: 'black',
+                          border: 'none',
+                          fontSize: '1rem',
+                          textTransform: 'uppercase',
+                          fontWeight: 'bold',
+                          cursor: 'pointer',
+                          transition: 'all 0.2s',
+                        }}
+                      >
                         -
                       </button>
-                      <span>{product.quantity}</span>
+                      <span
+                        style={{
+                          display: 'flex',
+                          justifyContent: 'center',
+                          alignItems: 'center',
+                          width: '30px',
+                          cursor: 'default',
+                        }}
+                      >
+                        {product.quantity}
+                      </span>
                       <button
                         onClick={() =>
                           updateQuantity(product.id, product.quantity + 1)
-                        }>
+                        }
+                        style={{
+                          color: 'white',
+                          background: 'black',
+                          border: 'none',
+                          fontSize: '1rem',
+                          textTransform: 'uppercase',
+                          fontWeight: 'bold',
+                          cursor: 'pointer',
+                          transition: 'all 0.2s',
+                        }}
+                      >
                         +
                       </button>
-                    </div>
-                  </div>
-                  <div className={styles.rightInfo}>
+                    </Box>
+                  </Box>
+                  <Box className={styles.rightInfo}>
                     <p>{product.price * product.quantity}.00$</p>
                     <CloseIcon
                       sx={{ cursor: 'pointer' }}
                       onClick={() => handleRemoveItem(product.id)}
                     />
-                  </div>
-                </div>
+                  </Box>
+                </Box>
               ))}
-            </div>
-          </div>
-          <div className={styles.totalContainer}>
-            <div className={styles.txtTotal}>
+            </Box>
+          </Box>
+          <Box className={styles.totalContainer}>
+            <Box className={styles.txtTotal}>
               <p>Subtotal</p>
               <p>{calculateTotalAmount()}.00$</p>
-            </div>
-            <button>Go To Checkout</button>
-          </div>
-        </div>
+            </Box>
+            <button
+              style={{
+                width: '150px',
+                height: '40px',
+                border: 'none',
+                fontSize: '0.8rem',
+                textTransform: 'uppercase',
+                fontWeight: 'bold',
+                cursor: 'pointer',
+                transition: 'all 0.2s',
+                border: '2px solid black ',
+              }}
+            >
+              Go To Checkout
+            </button>
+          </Box>
+        </Box>
       )}
-    </div>
+    </Box>
   )
 }
 

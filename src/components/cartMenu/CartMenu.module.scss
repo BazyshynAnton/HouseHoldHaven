@@ -1,7 +1,7 @@
 .cartMenu {
   position: fixed;
-  top: 0; /* Расположите меню на нужной вам высоте от верхнего края */
-  right: -540px; /* Скрытое положение меню */
+  top: 0;
+  right: -540px;
   width: 500px;
   height: 140vh;
   background-color: white;
@@ -12,7 +12,7 @@
 }
 
 .cartMenuOpened {
-  right: 0; /* Показываем меню, сдвигая его на 0 */
+  right: 0;
   z-index: 999;
 }
 
@@ -54,20 +54,6 @@
   font-weight: 700;
 }
 
-.productContainer {
-  height: 70vh;
-  padding: 0.2rem;
-  margin-top: 50px;
-  background: white;
-}
-
-.fullProductDiv {
-  height: 70%;
-  overflow-y: scroll;
-  padding: 5px;
-  margin-top: 2rem;
-}
-
 .fullProduct {
   display: flex;
   flex-direction: column;
@@ -105,35 +91,16 @@
 }
 
 .cartBtns {
-  display: flex;
   flex-direction: row;
   width: 90px;
   height: 30px;
-  border: 1px solid black;
   button {
     width: 30px;
     height: 30px;
-    color: white;
-    background: black;
 
     &:hover {
       background: #373737;
     }
-
-    border: none;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-  span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-
-    cursor: default;
   }
 }
 
@@ -166,797 +133,147 @@
     font-weight: 700;
   }
   button {
-    width: 150px;
-    height: 40px;
-
-    border: none;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.2s;
-    background-color: transparent;
-    border: 2px solid black !important;
     &:hover {
-      color: white;
-      background-color: black;
+      background-color: rgb(173, 34, 34);
     }
   }
 }
 
 @media (max-width: 538px) {
   .cartMenu {
-    position: fixed;
-    top: 0; /* Расположите меню на нужной вам высоте от верхнего края */
-    right: -540px; /* Скрытое положение меню */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    height: 140vh;
-    background-color: white;
-    color: black;
     padding: 10px 0 0 0;
-    transition: right 0.3s ease;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .cartMenuOpened {
-    right: 0; /* Показываем меню, сдвигая его на 0 */
-    z-index: 999;
-  }
-
-  .emptyContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 450px;
-    p {
-      margin: 15px 0 15px 0;
-      font-size: 1.4rem;
-      font-family: 'Blinker';
-      cursor: default;
-    }
-    button {
-      font-size: 1rem;
-      padding: 10px 8px 10px 8px;
-      cursor: pointer;
-    }
   }
 
   .imgInCart {
     width: 150px;
     height: 150px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
 
   .txtContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    font-size: 1.3rem;
-    font-family: 'Blinker';
-    font-weight: 700;
     width: 80%;
-  }
-
-  .productContainer {
-    height: 70vh;
-    padding: 0.2rem;
-    margin-top: 50px;
-    background: white;
-  }
-
-  .fullProductDiv {
-    height: 70%;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 2rem;
-  }
-
-  .fullProduct {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-  }
-
-  .cartProduct {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .leftImg {
-    width: 25%;
-    height: 100px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .cartInfoMiddle {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 10px;
-    font-size: 1.3rem;
-    font-family: 'Nunito';
-  }
-
-  .cartBtns {
-    display: flex;
-    flex-direction: row;
-    width: 90px;
-    height: 30px;
-    border: 1px solid black;
-    button {
-      width: 30px;
-      height: 30px;
-      color: white;
-      background: black;
-
-      &:hover {
-        background: #373737;
-      }
-
-      border: none;
-      font-size: 1rem;
-      text-transform: uppercase;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-    span {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 30px;
-
-      cursor: default;
-    }
-  }
-
-  .rightInfo {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    p {
-      font-family: 'Nunito';
-      font-weight: 700;
-    }
-  }
-
-  .totalContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    justify-content: space-between;
-    background: white;
-    border-top: 2px dashed black;
-    margin-top: 20px;
-
-    p {
-      font-size: 1.3rem;
-      font-family: 'Nunito';
-      font-weight: 700;
-    }
-    button {
-      width: 150px;
-      height: 40px;
-
-      border: none;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.2s;
-      background-color: transparent;
-      border: 2px solid black !important;
-      &:hover {
-        color: white;
-        background-color: black;
-      }
-    }
   }
 }
 
 @media (max-width: 338px) {
-  .cartMenu {
-    position: fixed;
-    top: 0; /* Расположите меню на нужной вам высоте от верхнего края */
-    right: -540px; /* Скрытое положение меню */
-    width: 100%;
-    height: 140vh;
-    background-color: white;
-    color: black;
-    padding: 10px 0 0 0;
-    transition: right 0.3s ease;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .cartMenuOpened {
-    right: 0; /* Показываем меню, сдвигая его на 0 */
-    z-index: 999;
-  }
-
   .emptyContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 450px;
     p {
-      margin: 15px 0 15px 0;
       font-size: 1.2rem;
-      font-family: 'Blinker';
-      cursor: default;
-    }
-    button {
-      font-size: 1rem;
-      padding: 10px 8px 10px 8px;
-      cursor: pointer;
     }
   }
 
   .imgInCart {
     width: 100px;
     height: 100px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
 
   .txtContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     font-size: 1rem;
-    font-family: 'Blinker';
-    font-weight: 700;
+
     width: 200px;
   }
 
-  .productContainer {
-    height: 70vh;
-    padding: 0.2rem;
-    margin-top: 50px;
-    background: white;
-  }
-
-  .fullProductDiv {
-    height: 70%;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 2rem;
-  }
-
   .fullProduct {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
     gap: 0.3rem;
   }
 
   .cartProduct {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    border: 1px solid grey;
   }
 
   .leftImg {
     padding-top: 5px;
     height: 80px;
     width: 100px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
 
   .cartInfoMiddle {
     width: 80px;
     height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
     padding: 0;
     font-size: 0.9rem;
-    font-family: 'Nunito';
-    align-items: center;
-  }
-
-  .cartBtns {
-    display: flex;
-    flex-direction: row;
-    width: 90px;
-    height: 30px;
-    border: 1px solid black;
-    button {
-      width: 30px;
-      height: 30px;
-      color: white;
-      background: black;
-
-      &:hover {
-        background: #373737;
-      }
-
-      border: none;
-      font-size: 1rem;
-      text-transform: uppercase;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-    span {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 30px;
-
-      cursor: default;
-    }
   }
 
   .rightInfo {
     width: 100%;
     height: 20%;
-    display: flex;
     flex-direction: row;
     justify-content: flex-end;
     p {
       font-size: 0.8rem;
-      font-family: 'Nunito';
-      font-weight: 700;
     }
   }
 
   .totalContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
     height: 100px;
-    justify-content: space-between;
-    background: white;
-    border-top: 2px dashed black;
-    margin-top: 20px;
+    flex-direction: column;
 
     p {
       font-size: 1.1rem;
-      font-family: 'Nunito';
-      font-weight: 700;
-    }
-    button {
-      width: 150px;
-      height: 40px;
-
-      border: none;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.2s;
-      background-color: transparent;
-      border: 2px solid black !important;
-      &:hover {
-        color: white;
-        background-color: black;
-      }
     }
   }
 }
 
 @media (max-width: 200px) {
-  .cartMenu {
-    position: fixed;
-    top: 0; /* Расположите меню на нужной вам высоте от верхнего края */
-    right: -540px; /* Скрытое положение меню */
-    width: 100%;
-    height: 140vh;
-    background-color: white;
-    color: black;
-    padding: 10px 0 0 0;
-    transition: right 0.3s ease;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .cartMenuOpened {
-    right: 0; /* Показываем меню, сдвигая его на 0 */
-    z-index: 999;
-  }
-
   .emptyContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 450px;
     p {
-      margin: 15px 0 15px 0;
       font-size: 0.9rem;
-      font-family: 'Blinker';
-      cursor: default;
     }
     button {
       font-size: 0.8rem;
       padding: 8px 8px 8px 8px;
-      cursor: pointer;
-    }
-  }
-
-  .imgInCart {
-    width: 100px;
-    height: 100px;
-    img {
-      width: 100%;
-      height: 100%;
     }
   }
 
   .txtContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     font-size: 0.8rem;
-    font-family: 'Blinker';
-    font-weight: 700;
     width: 80%;
-  }
-
-  .productContainer {
-    height: 70vh;
-    padding: 0.2rem;
-    margin-top: 50px;
-    background: white;
-  }
-
-  .fullProductDiv {
-    height: 70%;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 2rem;
-  }
-
-  .fullProduct {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    gap: 0.3rem;
-  }
-
-  .cartProduct {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border: 1px solid grey;
   }
 
   .leftImg {
-    padding-top: 5px;
-    height: 80px;
     width: 80px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
 
   .cartInfoMiddle {
-    width: 80%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
     font-size: 0.8rem;
-    font-family: 'Nunito';
-    align-items: center;
-    justify-content: center;
   }
 
   .cartBtns {
-    display: flex;
-    flex-direction: row;
     width: 50px;
     height: 20px;
-    border: 1px solid black;
     button {
       width: 40px;
       height: 20px;
-      color: white;
-      background: black;
-
-      &:hover {
-        background: #373737;
-      }
-
-      border: none;
-      font-size: 1rem;
-      text-transform: uppercase;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-    span {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 30px;
-
-      cursor: default;
-    }
-  }
-
-  .rightInfo {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    p {
-      font-size: 0.8rem;
-      font-family: 'Nunito';
-      font-weight: 700;
-    }
-  }
-
-  .totalContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    justify-content: space-between;
-    background: white;
-    border-top: 2px dashed black;
-    margin-top: 20px;
-
-    p {
-      font-size: 1.1rem;
-      font-family: 'Nunito';
-      font-weight: 700;
-    }
-    button {
-      width: 150px;
-      height: 40px;
-
-      border: none;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.2s;
-      background-color: transparent;
-      border: 2px solid black !important;
-      &:hover {
-        color: white;
-        background-color: black;
-      }
     }
   }
 }
 
 @media (max-width: 150px) {
-  .cartMenu {
-    position: fixed;
-    top: 0; /* Расположите меню на нужной вам высоте от верхнего края */
-    right: -540px; /* Скрытое положение меню */
-    width: 100%;
-    height: 140vh;
-    background-color: white;
-    color: black;
-    padding: 10px 0 0 0;
-    transition: right 0.3s ease;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .cartMenuOpened {
-    right: 0; /* Показываем меню, сдвигая его на 0 */
-    z-index: 999;
-  }
-  .emptyContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 450px;
-    p {
-      margin: 15px 0 15px 0;
-      font-size: 0.9rem;
-      font-family: 'Blinker';
-      cursor: default;
-    }
-    button {
-      font-size: 0.8rem;
-      padding: 8px 8px 8px 8px;
-      cursor: pointer;
-    }
-  }
-
-  .imgInCart {
-    width: 100px;
-    height: 100px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .txtContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 0.8rem;
-    font-family: 'Blinker';
-    font-weight: 700;
-    width: 80%;
-  }
-
-  .productContainer {
-    height: 70vh;
-    padding: 0.2rem;
-    margin-top: 50px;
-    background: white;
-  }
-
-  .fullProductDiv {
-    height: 70%;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 2rem;
-  }
-
-  .fullProduct {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    gap: 0.3rem;
-  }
-
-  .cartProduct {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border: 1px solid grey;
-  }
-
   .leftImg {
-    padding-top: 5px;
     height: 50px;
     width: 50px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
 
   .cartInfoMiddle {
     width: 50px;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
     font-size: 0.7rem;
-    font-family: 'Nunito';
-    align-items: center;
-    justify-content: center;
   }
 
   .cartBtns {
-    display: flex;
-    flex-direction: row;
     width: 30px;
-    height: 20px;
-    border: 1px solid black;
     button {
       width: 30px;
-      height: 20px;
-      color: white;
-      background: black;
-
-      &:hover {
-        background: #373737;
-      }
-
-      border: none;
-      font-size: 1rem;
-      text-transform: uppercase;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-    span {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 30px;
-
-      cursor: default;
     }
   }
 
   .rightInfo {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
     p {
       font-size: 0.7rem;
-      font-family: 'Nunito';
-      font-weight: 700;
-    }
-  }
-
-  .totalContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    justify-content: space-between;
-    background: white;
-    border-top: 2px dashed black;
-    margin-top: 20px;
-
-    p {
-      font-size: 1.1rem;
-      font-family: 'Nunito';
-      font-weight: 700;
-    }
-    button {
-      width: 100px;
-      height: 40px;
-
-      border: none;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.2s;
-      background-color: transparent;
-      border: 2px solid black !important;
-      &:hover {
-        color: white;
-        background-color: black;
-      }
     }
   }
 }

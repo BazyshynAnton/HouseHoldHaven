@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { NavLink, useParams } from 'react-router-dom'
+import { Box, Container } from '@mui/material'
 import Button from '../button/Button'
 import Items from '../items/Items'
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore'
@@ -34,23 +35,56 @@ const Categories = () => {
   const areProductsAvailable = filteredProducts.length > 0
 
   return (
-    <>
-      <div className={styles.sortContainer}>
-        <div className={styles.sortHeader}>
-          <NavLink to="/" onClick={() => window.scrollTo(0, 0)}>
-            <NavigateBeforeIcon sx={{ fontFamily: 'Blinker, sans-serif' }} />
+    <Container>
+      <Box
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          flexDirection: 'column',
+          marginTop: '100px',
+        }}
+      >
+        <Box
+          sx={{
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <NavLink
+            to="/"
+            onClick={() => window.scrollTo(0, 0)}
+            style={{
+              color: 'black',
+              alignItems: 'center',
+              display: 'flex',
+              textAlign: 'center',
+              textDecoration: 'none',
+            }}
+          >
+            <NavigateBeforeIcon />
             Home
           </NavLink>
-          <h3>
+          <h3
+            style={{
+              fontSize: '1.5rem',
+              margin: '0 auto',
+              textAlign: 'center',
+              textTransform: 'uppercase',
+              fontWeight: '800',
+              fontFamily: 'Blinker, sans-serif',
+            }}
+          >
             {filteredProducts.length > 0
               ? filteredProducts.length === 20
                 ? 'ALL'
                 : filteredProducts[0].category
               : ''}
           </h3>
-        </div>
+        </Box>
 
-        <div className={styles.sortBtnContainer}>
+        <Box sx={{ marginTop: '40px' }} className={styles.sortBtnContainer}>
           <ul>
             <li>
               <NavLink to="/categories/all">
@@ -88,15 +122,17 @@ const Categories = () => {
               </NavLink>
             </li>
           </ul>
-        </div>
-        <div className={styles.cardsContainer}>
+        </Box>
+        <Box className={styles.cardsContainer}>
           {/*checks if there are available products*/}
           {areProductsAvailable ? (
             filteredProducts.map((product) => (
               <NavLink
                 key={product.id}
                 to={`/categories/product/${product.id}`}
-                onClick={() => window.scrollTo(0, 0)}>
+                onClick={() => window.scrollTo(0, 0)}
+                style={{ textDecoration: 'none', color: 'black' }}
+              >
                 <Items
                   img1={product.img1}
                   name={product.name}
@@ -108,9 +144,9 @@ const Categories = () => {
             // if there are no products, redirect to the NotFound page
             <h3>No products found in this category.</h3>
           )}
-        </div>
-      </div>
-    </>
+        </Box>
+      </Box>
+    </Container>
   )
 }
 

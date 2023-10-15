@@ -5,8 +5,6 @@ import CategoriesPage from './Pages/categoriesPage/CategoriesPage'
 import ProductPage from './Pages/productPage/ProductPage'
 import NotFound from './components/notFound/NotFound'
 
-import './App.css'
-
 function App() {
   return (
     <Routes>
