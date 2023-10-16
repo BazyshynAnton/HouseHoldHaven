@@ -218,9 +218,12 @@ const Navigation = () => {
                 }}
               >
                 <NavLink
-                  to="."
+                  to="/"
                   style={style}
-                  onClick={() => window.scrollTo(0, 0)}
+                  onClick={() => {
+                    window.scrollTo(0, 0)
+                    setOpen(false)
+                  }}
                 >
                   <h5 className={styles.textInBar}>HOME</h5>
                 </NavLink>
@@ -231,7 +234,14 @@ const Navigation = () => {
                   justifyContent: 'center',
                 }}
               >
-                <NavLink to="categories/all" style={style}>
+                <NavLink
+                  to="categories/all"
+                  style={style}
+                  onClick={() => {
+                    window.scrollTo(0, 0)
+                    setOpen(false)
+                  }}
+                >
                   <h5 className={styles.textInBar}>CATEGORIES</h5>
                 </NavLink>
               </ListItem>
@@ -244,7 +254,10 @@ const Navigation = () => {
               >
                 <NavLink
                   to="/categories/product/8853fbbe-2649-11ee-be56-0242ac120002"
-                  onClick={() => window.scrollTo(0, 0)}
+                  onClick={() => {
+                    window.scrollTo(0, 0)
+                    setOpen(false)
+                  }}
                   style={{
                     ...style,
                     width: '110px',

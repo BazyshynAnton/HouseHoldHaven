@@ -149,7 +149,13 @@ const CartMenu = ({ isOpen, handleCloseCartMenu }) => {
                     marginTop: '10px',
                   }}
                 >
-                  <NavLink to="/cart">
+                  <NavLink
+                    to="/cart"
+                    onClick={() => {
+                      window.scrollTo(0, 0)
+                      handleCloseCartMenu()
+                    }}
+                  >
                     <button
                       style={{
                         padding: '4px',

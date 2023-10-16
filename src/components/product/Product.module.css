@@ -313,7 +313,9 @@
   }
   .productLeft {
     height: 300px;
-    padding-top: 5rem;
+  }
+  .productRight {
+    padding-bottom: 5rem;
   }
   .bigImg {
     width: 250px;
