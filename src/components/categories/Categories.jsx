@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import { NavLink, useParams } from 'react-router-dom'
 import { Box, Container } from '@mui/material'
+import { NavLink, useParams } from 'react-router-dom'
 import Button from '../button/Button'
 import Items from '../items/Items'
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore'

@@ -139,7 +139,14 @@ const Product = () => {
             </Box>
             <Box className={styles.infoContainer}>
               <h3>Quantity</h3>
-              <Box className={styles.counterContainer}>
+              <Box
+                sx={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  border: '1px solid black',
+                }}
+              >
                 <button className={styles.controlBtn} onClick={decrease}>
                   -
                 </button>
