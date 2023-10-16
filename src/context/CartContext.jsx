@@ -21,6 +21,9 @@ const CartProvider = ({ children }) => {
       prevProducts.filter((product) => product.id !== itemId)
     )
   }
+  const removeAllFromCart = () => {
+    setCartProducts([])
+  }
 
   //function - update the quantity of products in the cart
   const updateQuantity = (productId, newQuantity) => {
@@ -40,7 +43,14 @@ const CartProvider = ({ children }) => {
   //exposing the cart state and (control functions) to the context!!
   return (
     <CartContext.Provider
-      value={{ cartProducts, addToCart, removeFromCart, updateQuantity }}>
+      value={{
+        cartProducts,
+        addToCart,
+        removeFromCart,
+        removeAllFromCart,
+        updateQuantity,
+      }}
+    >
       {/* Render the child components that will have access to the context */}
       {children}
     </CartContext.Provider>

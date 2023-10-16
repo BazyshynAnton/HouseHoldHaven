@@ -1,3 +1,18 @@
+//CartPage
+.listOfProducts {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 колонки з однаковою шириною */
+  gap: 10px;
+}
+
+.clearAllBtn {
+  &:hover {
+    background: gray;
+  }
+}
+
+//CartMenu
 .cartMenu {
   position: fixed;
   top: 0;
@@ -139,6 +154,18 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .listOfProducts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .listOfProducts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 538px) {
   .cartMenu {
     display: flex;
@@ -155,6 +182,12 @@
 
   .txtContainer {
     width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .listOfProducts {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

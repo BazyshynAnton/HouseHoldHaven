@@ -6,6 +6,7 @@ import CloseIcon from '@mui/icons-material/Close'
 import shoppingEmptyCart from '../../images/shoppingEmptyCart.jpg'
 
 import styles from './CartMenu.module.css'
+import { NavLink } from 'react-router-dom'
 
 /* 
   -access to context
@@ -69,7 +70,7 @@ const CartMenu = ({ isOpen, handleCloseCartMenu }) => {
         >
           <Box className={styles.fullProductBox}>
             <Box className={styles.fullProduct}>
-              {cartProducts.map((product) => (
+              {cartProducts.slice(0, 2).map((product) => (
                 <Box className={styles.cartProduct} key={product.id}>
                   <Box className={styles.leftImg}>
                     <img src={product.img1} />
@@ -137,6 +138,30 @@ const CartMenu = ({ isOpen, handleCloseCartMenu }) => {
                   </Box>
                 </Box>
               ))}
+
+              {cartProducts.length > 2 && (
+                <Box
+                  sx={{
+                    display: 'flex',
+                    width: '100%',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    marginTop: '10px',
+                  }}
+                >
+                  <NavLink to="/cart">
+                    <button
+                      style={{
+                        padding: '4px',
+                        border: '1px solid grey',
+                        cursor: 'pointer',
+                      }}
+                    >
+                      SHOW MORE({cartProducts.length - 2})
+                    </button>
+                  </NavLink>
+                </Box>
+              )}
             </Box>
           </Box>
           <Box className={styles.totalContainer}>
