@@ -68,7 +68,7 @@ const AllCartProducts = () => {
                 justifyContent: 'center',
                 flexDirection: 'column',
                 gap: '0.5rem',
-                border: '1px solid #ccc',
+                border: '1px solid #000',
                 textAlign: 'center',
                 padding: '10px',
               }}

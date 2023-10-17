@@ -9,13 +9,13 @@
   width: 150px;
   height: 200px;
   padding: 20px;
-  border: 1px solid silver;
+  border: 1px solid rgb(129, 129, 129);
   -webkit-transition: border-color 0.3s ease;
   transition: border-color 0.3s ease;
   cursor: pointer;
 }
 .card:hover {
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .imgContainer {

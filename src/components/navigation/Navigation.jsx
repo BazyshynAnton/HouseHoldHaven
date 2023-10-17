@@ -18,6 +18,8 @@ import MenuIcon from '@mui/icons-material/Menu'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
 
+import websiteLogo from '../../images/websiteLogo.png'
+
 import styles from './Navigation.module.css'
 
 //styles for links (NavLink)
@@ -86,69 +88,103 @@ const Navigation = () => {
         }}
       >
         <Container>
-          <Toolbar
-            sx={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}
-            disableGutters
-          >
-            {isDesktop && (
-              <List sx={{ display: 'flex' }}>
-                <ListItem>
-                  <NavLink
-                    to="."
-                    style={style}
-                    onClick={() => window.scrollTo(0, 0)}
-                  >
-                    <h5 className={styles.textInBar}>HOME</h5>
-                  </NavLink>
-                </ListItem>
-                <ListItem>
-                  <NavLink to="categories/all" style={style}>
-                    <h5 className={styles.textInBar}>CATEGORIES</h5>
-                  </NavLink>
-                </ListItem>
-                <ListItem>
-                  <NavLink
-                    to="/categories/product/8853fbbe-2649-11ee-be56-0242ac120002"
-                    onClick={() => window.scrollTo(0, 0)}
-                    style={{
-                      ...style,
-                      width: '110px',
-                      whiteSpace: 'nowrap',
-                      textDecoration: 'none',
-                      color: 'black',
-                    }}
-                  >
-                    <h5 className={styles.textInBar}>PRODUCT PAGE</h5>
-                  </NavLink>
-                </ListItem>
-
-                <ListItem>
-                  {/* Shopping cart in navbar */}
-                  <Box
-                    sx={{ color: 'black', cursor: 'pointer' }}
-                    onClick={handleCartIconClick}
-                  >
-                    <ShoppingCartIcon />
-                    {!!cartProducts.length && (
-                      <span style={stylesForIndicator}>
-                        {cartProducts.length}
-                      </span>
-                    )}
+          {isDesktop && (
+            <Toolbar
+              sx={{
+                width: '100%',
+                display: 'flex',
+                justifyContent: 'space-between',
+              }}
+              disableGutters
+            >
+              <>
+                <NavLink to="/" onClick={() => window.scrollTo(0, 0)}>
+                  <Box sx={{ width: '60px', height: '60px' }}>
+                    <img
+                      src={websiteLogo}
+                      alt="website-logo"
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                      }}
+                    />
                   </Box>
-                  {/* Show Cart Sliding Menu */}
-                  <CartMenu
-                    isOpen={isCartMenuOpen}
-                    handleCloseCartMenu={handleCloseCartMenu}
-                  />
-                </ListItem>
-              </List>
-            )}
+                </NavLink>
+                <List
+                  sx={{
+                    display: 'flex',
+                  }}
+                >
+                  <Box sx={{ display: 'flex' }}>
+                    <ListItem>
+                      <NavLink
+                        to="."
+                        style={style}
+                        onClick={() => window.scrollTo(0, 0)}
+                      >
+                        <h5 className={styles.textInBar}>HOME</h5>
+                      </NavLink>
+                    </ListItem>
+                    <ListItem>
+                      <NavLink to="categories/all" style={style}>
+                        <h5 className={styles.textInBar}>CATEGORIES</h5>
+                      </NavLink>
+                    </ListItem>
+                    <ListItem>
+                      <NavLink
+                        to="/categories/product/8853fbbe-2649-11ee-be56-0242ac120002"
+                        onClick={() => window.scrollTo(0, 0)}
+                        style={{
+                          ...style,
+                          width: '110px',
+                          whiteSpace: 'nowrap',
+                          textDecoration: 'none',
+                          color: 'black',
+                        }}
+                      >
+                        <h5 className={styles.textInBar}>PRODUCT PAGE</h5>
+                      </NavLink>
+                    </ListItem>
 
-            {/*
+                    <ListItem>
+                      {/* Shopping cart in navbar */}
+                      <Box
+                        sx={{ color: 'black', cursor: 'pointer' }}
+                        onClick={handleCartIconClick}
+                      >
+                        <ShoppingCartIcon />
+                        {!!cartProducts.length && (
+                          <span style={stylesForIndicator}>
+                            {cartProducts.length}
+                          </span>
+                        )}
+                      </Box>
+                      {/* Show Cart Sliding Menu */}
+                      <CartMenu
+                        isOpen={isCartMenuOpen}
+                        handleCloseCartMenu={handleCloseCartMenu}
+                      />
+                    </ListItem>
+                  </Box>
+                </List>
+              </>
+            </Toolbar>
+          )}
+
+          {/*
         either a list of links (if the width is greater than 480px)
         or a menu button (if the width is less than 480px) is displayed
         */}
-            {!isDesktop && (
+          {!isDesktop && (
+            <Toolbar
+              sx={{
+                width: '100%',
+                display: 'flex',
+                justifyContent: 'flex-end',
+              }}
+              disableGutters
+            >
               <List sx={{ display: 'flex' }}>
                 <IconButton onClick={() => setOpen(true)}>
                   <MenuIcon />
@@ -173,8 +209,8 @@ const Navigation = () => {
                   />
                 </ListItem>
               </List>
-            )}
-          </Toolbar>
+            </Toolbar>
+          )}
         </Container>
 
         {/*overlay that appears when the cart menu (CartMenu) is open*/}
@@ -209,8 +245,20 @@ const Navigation = () => {
               sx={{
                 display: 'flex',
                 flexDirection: 'column',
+                alignItems: 'center',
               }}
             >
+              <Box sx={{ width: '60px', height: '60px' }}>
+                <img
+                  src={websiteLogo}
+                  alt="website-logo"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                  }}
+                />
+              </Box>
               <ListItem
                 sx={{
                   display: 'flex',
