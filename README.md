@@ -43,7 +43,7 @@ Start the project `npm run dev`
 
 ## Screenshots of the Project  
 
-### <div align="center">🟩Home Page🟩</div>  
+### <div align="center">🟩Home Page🟩  </div>
  
 
 
