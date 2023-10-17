@@ -1,6 +1,6 @@
 # House Hold Haven
 
-<div align="center"><img src='https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/9e7b16ec-490e-4f80-8ad0-d629377242fd'/></div>
+<div align="center"><img src='https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/6650bc26-c018-4fd5-bd61-259fbf90b693'/></div>
 
 House Hold Haven is an online store for purchasing home and household products.  
 Our assortment includes everything you need to create a cozy and comfortable environment in your home.
