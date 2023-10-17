@@ -71,4 +71,4 @@ Start the project `npm run dev`
 
 ### <div align="center"><br><br>🟩"Navigation Menu" on tablets or phones🟩</div>
 
-<div align="center">![mobile](https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/1b93be1f-97b0-4fe6-8f88-1900e60eb1d5)</div>
+<div align="center"><img src='https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/1b93be1f-97b0-4fe6-8f88-1900e60eb1d5'/></div>
