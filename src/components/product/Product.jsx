@@ -12,7 +12,8 @@ import { Box, Container } from '@mui/material'
 const Product = () => {
   const [notificationMessage, setNotificationMessage] = useState('') //contains a notification message that appears when an item is added to the cart
   const [notificationVisible, setNotificationVisible] = useState(false) //contains a notification message that appears when an item is added to the cart
-  const { cartProducts, addToCart } = useContext(CartContext) //function - add a product to the cart
+  const { cartProducts, addToCart, increase, decrease, counter } =
+    useContext(CartContext) //context
 
   //function - called when the "ADD TO CART" button is pressed
   const handleAddToCart = () => {
@@ -22,6 +23,7 @@ const Product = () => {
       img1: currentProduct.img1,
       name: currentProduct.name,
       price: calcPrice(counter),
+      defaultPrice: currentProduct.defaultPrice,
       quantity: counter,
     }
 
@@ -58,7 +60,6 @@ const Product = () => {
   const defaultProduct = products.find((product) => product.id === id) //find the product with the specified id in the products array
   const [currentProduct, setCurrentProduct] = useState(defaultProduct) //this is the currently selected product
   const [image, setImage] = useState(currentProduct.img2)
-  const [counter, setCounter] = useState(1) //state that stores the current number of products
 
   //changeImage is a function called when hovering over small product images!
   const changeImage = (e) => {
@@ -68,31 +69,19 @@ const Product = () => {
   //watches for changes to the id and defaultProduct parameters. If the id changes, then the currentProduct is updated according to the new id
   useEffect(() => {
     if (id) {
-      //find the product with the specified id in the products array
       const product = products.find((product) => product.id === id)
       if (product) {
         setCurrentProduct(product)
+        setImage(product.img2) // when product change - update picture
       } else {
-        setCurrentProduct(defaultProduct) //if the product with the specified id is not found, we use the default product
+        setCurrentProduct(defaultProduct)
+        setImage(defaultProduct.img2)
       }
     } else {
-      setCurrentProduct(defaultProduct) //if the "id" parameter is not specified in the URL, we use the default product
+      setCurrentProduct(defaultProduct)
+      setImage(defaultProduct.img2)
     }
   }, [id, defaultProduct])
-
-  //increase counter
-  const increase = () => {
-    if (counter < 10) {
-      setCounter((count) => count + 1)
-    }
-  }
-
-  //decrease counter
-  const decrease = () => {
-    if (counter > 1) {
-      setCounter((count) => count - 1)
-    }
-  }
 
   //calculates the total cost of products
   const calcPrice = (count) => {

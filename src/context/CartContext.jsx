@@ -40,6 +40,22 @@ const CartProvider = ({ children }) => {
     )
   }
 
+  const [counter, setCounter] = useState(1) //state that stores the current number of products
+
+  //increase counter
+  const increase = () => {
+    if (counter < 10) {
+      setCounter((count) => count + 1)
+    }
+  }
+
+  //decrease counter
+  const decrease = () => {
+    if (counter > 1) {
+      setCounter((count) => count - 1)
+    }
+  }
+
   //exposing the cart state and (control functions) to the context!!
   return (
     <CartContext.Provider
@@ -49,6 +65,10 @@ const CartProvider = ({ children }) => {
         removeFromCart,
         removeAllFromCart,
         updateQuantity,
+        counter,
+        setCounter,
+        increase,
+        decrease,
       }}
     >
       {/* Render the child components that will have access to the context */}

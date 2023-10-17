@@ -1,10 +1,15 @@
+import { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Box } from '@mui/material'
 import Items from '../items/Items'
 
+import { CartContext } from '../../context/CartContext'
+
 import products from '../../data/products'
 
 function TrendingItem() {
+  const { setCounter } = useContext(CartContext)
+
   //(including 8, but not including 15), select 7 products to display.
   const filteredProducts = products.slice(8, 15)
 
@@ -16,7 +21,10 @@ function TrendingItem() {
       {filteredProducts.map((product) => (
         <Box key={product.id}>
           <NavLink
-            onClick={handleNavLinkClick}
+            onClick={() => {
+              handleNavLinkClick()
+              setCounter(1)
+            }}
             to={`/categories/product/${product.id}`}
             style={{ textDecoration: 'none', color: 'black' }}
           >

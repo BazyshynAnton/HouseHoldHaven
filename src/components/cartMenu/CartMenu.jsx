@@ -26,7 +26,7 @@ const CartMenu = ({ isOpen, handleCloseCartMenu }) => {
   //function - calculate the total amount of all items in the cart
   const calculateTotalAmount = () => {
     return cartProducts.reduce(
-      (total, product) => total + product.price * product.quantity,
+      (total, product) => total + product.defaultPrice * product.quantity,
       0
     )
   }
@@ -130,7 +130,7 @@ const CartMenu = ({ isOpen, handleCloseCartMenu }) => {
                     </Box>
                   </Box>
                   <Box className={styles.rightInfo}>
-                    <p>{product.price * product.quantity}.00$</p>
+                    <p>{product.defaultPrice * product.quantity}.00$</p>
                     <CloseIcon
                       sx={{ cursor: 'pointer' }}
                       onClick={() => handleRemoveItem(product.id)}

@@ -22,7 +22,7 @@ const AllCartProducts = () => {
   //function - calculate the total amount of all items in the cart
   const calculateTotalAmount = () => {
     return cartProducts.reduce(
-      (total, product) => total + product.price * product.quantity,
+      (total, product) => total + product.defaultPrice * product.quantity,
       0
     )
   }
@@ -82,7 +82,7 @@ const AllCartProducts = () => {
               </Box>
               <Box className={styles.text}>
                 <h3>{product.name}</h3>
-                <h5>{product.price}$</h5>
+                <h5>{product.defaultPrice * product.quantity}.00$</h5>
               </Box>
               <CloseIcon
                 onClick={() => handleRemoveItem(product.id)}

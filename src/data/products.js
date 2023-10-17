@@ -109,6 +109,7 @@ const products = [
     img4: lightOne3,
     name: 'Candlestick',
     price: 20,
+    defaultPrice: 20,
     description:
       'Flawless masterpiece of decorative lighting, this candlestick will captivate with its refined design and high-quality craftsmanship. It will serve as an exquisite addition to any interior, creating an ambiance of warmth and luxury.',
     category: 'furnitures',
@@ -121,6 +122,7 @@ const products = [
     img4: chairOne3,
     name: 'Chair (White)',
     price: 150,
+    defaultPrice: 150,
     description:
       'Welcome to the world of comfort and style with our VILDSUND armchair! This chair is the epitome of elegance and convenience, designed to make your moments of relaxation even more enjoyable and luxurious.',
     category: 'chairs',
@@ -133,6 +135,7 @@ const products = [
     img4: lampOne3,
     name: 'Lamp (Black)',
     price: 30,
+    defaultPrice: 30,
     description:
       'This lamp will create an atmosphere of warmth and harmony in your home, adding a charming look and sophistication to the space.',
     category: 'lamps',
@@ -145,6 +148,7 @@ const products = [
     img4: kitchenOne3,
     name: 'Lunch set',
     price: 455,
+    defaultPrice: 455,
     description:
       'A merger of style and convenience that will transform your meals into moments of refined enjoyment. This set offers the highest quality and aesthetic satisfaction, providing you with a sense of true elegance while dining with family and friends.',
     category: 'kitchen',
@@ -157,6 +161,7 @@ const products = [
     img4: chairTwo3,
     name: 'Chair (Gray)',
     price: 50,
+    defaultPrice: 50,
     description:
       'The chair is made from high-quality materials, ensuring its durability and strength. You will be able to enjoy its comfort for many years without experiencing discomfort or wear.',
     category: 'chairs',
@@ -169,6 +174,7 @@ const products = [
     img4: cameraOne3,
     name: 'IP Camera',
     price: 200,
+    defaultPrice: 200,
     description:
       'Full HD Resolution (1080p): Enjoy crystal-clear video quality with the "VisionGuard Pro" IP Camera\'s Full HD resolution, allowing you to capture even the smallest details in stunning clarity.',
     category: 'electronics',
@@ -181,6 +187,7 @@ const products = [
     img4: poufOne3,
     name: 'Pouf',
     price: 100,
+    defaultPrice: 100,
     description:
       'Transform your living space into a soothing haven of comfort with this pouf. Its cushioned surface and gentle support cradle you in a sense of tranquility, making it the perfect companion for moments of rest and serenity.',
     category: 'chairs',
@@ -193,6 +200,7 @@ const products = [
     img4: careOne3,
     name: 'Cleansing Foam',
     price: 15,
+    defaultPrice: 15,
     description:
       'Cleansing Foam is specially formulated to deeply cleanse your skin, removing impurities, excess oil, and traces of makeup without stripping away essential moisture. Its rich, creamy texture transforms into a luxurious lather, enveloping your skin in a gentle embrace.',
     category: 'skincare',
@@ -205,6 +213,7 @@ const products = [
     img4: tableOne3,
     name: 'Adjustable Writing Desk (Black)',
     price: 227,
+    defaultPrice: 227,
     description:
       'Adjustable Writing Desk is designed for adaptability. With its versatile design, it can function as a traditional sitting desk, or with a quick adjustment, transform into a standing desk for an invigorating change of pace. Enjoy the flexibility to switch between configurations effortlessly, optimizing your productivity and focus.',
     category: 'furnitures',
@@ -219,6 +228,7 @@ const products = [
     description:
       "Say goodbye to discomfort and fatigue with our Computer Chair's ergonomic design. It features adjustable height and recline options, allowing you to find the perfect seating position that aligns with your body's natural curves. ",
     price: 250,
+    defaultPrice: 250,
     category: 'chairs',
     id: '8853fbbe-2649-11ee-be56-0242ac120002',
   },
@@ -229,6 +239,7 @@ const products = [
     img4: lampTwo3,
     name: 'Lamp (White)',
     price: 40,
+    defaultPrice: 40,
     description:
       'Our Lamp boasts a sleek and timeless design, making it a seamless addition to any interior decor. Its clean lines and modern silhouette exude sophistication, adding a touch of refined elegance to your living room, bedroom, study, or office.',
     category: 'lamps',
@@ -242,6 +253,7 @@ const products = [
     img4: sofaOne3,
     name: 'Bed (Grey)',
     price: 1300,
+    defaultPrice: 1300,
     description:
       "Experience a new level of comfort as you sink into the plushness of our Bed. Its carefully chosen materials and advanced construction offer superior support for your body, ensuring a restorative night's sleep and waking up refreshed and revitalized.",
     category: 'furnitures',
@@ -254,6 +266,7 @@ const products = [
     img4: careTwo3,
     name: 'Aqua Sun Gel 50ml',
     price: 30,
+    defaultPrice: 30,
     description:
       'Aqua Sun Gel provides reliable broad-spectrum protection, shielding your skin from both UVA and UVB rays. Its advanced formula helps prevent sunburns, premature aging, and skin damage caused by harmful sun exposure.',
     category: 'care',
@@ -266,6 +279,7 @@ const products = [
     img4: dresserOne3,
     name: 'Dresser (White)',
     price: 250,
+    defaultPrice: 250,
     description:
       'Crafted with meticulous attention to detail, our Dresser showcases premium craftsmanship that exudes quality and durability. From the smooth glide of the drawers to the seamless joinery, every aspect of this piece speaks to its superior construction.',
     category: 'furnitures',
@@ -279,6 +293,7 @@ const products = [
     img4: tableTwo3,
     name: 'Table (White&Gray)',
     price: 300,
+    defaultPrice: 300,
     description:
       'Built with sturdy materials and expert craftsmanship, our Table ensures durability and longevity. The solid construction guarantees stability, allowing you to enjoy its beauty and functionality for years to come.',
     category: 'furnitures',
@@ -291,6 +306,7 @@ const products = [
     img4: mirrorOne3,
     name: 'Mirror',
     price: 80,
+    defaultPrice: 80,
     description:
       'Our Mirror showcases captivating design and meticulous craftsmanship. Its frame, whether ornate and intricate or sleek and minimalist, is a testament to the beauty of thoughtful details, making it a statement piece that complements any room.',
     category: 'furnitures',
@@ -303,6 +319,7 @@ const products = [
     img4: chairFour3,
     name: 'Office Chair (Black)',
     price: 200,
+    defaultPrice: 200,
     description:
       'Our Office Chair is engineered for maximum comfort and support. Its ergonomic design conforms to the natural curves of your body, promoting healthy posture and reducing strain on your back, neck, and shoulders.',
     category: 'chairs',
@@ -315,6 +332,7 @@ const products = [
     img4: lampThree3,
     name: 'Lamp (Black)',
     price: 70,
+    defaultPrice: 70,
     description:
       "Embrace the magic of our Lamp as it casts a soothing glow, enveloping your space in a gentle and calming ambiance. Whether you're reading a book, enjoying a quiet moment, or hosting an intimate gathering, this lamp creates the perfect atmosphere.",
     category: 'lamps',
@@ -327,6 +345,7 @@ const products = [
     img4: sofaTwo3,
     name: 'Bed (White)',
     price: 1400,
+    defaultPrice: 1400,
     description:
       'With its sleek lines and timeless design, our Bed becomes the centerpiece of your bedroom decor. Its elegant aesthetics blend effortlessly with any interior style, adding a touch of sophistication to your living space.',
     category: 'furnitures',
@@ -340,6 +359,7 @@ const products = [
     img4: careThree3,
     name: 'Peeling Gel',
     price: 25,
+    defaultPrice: 25,
     description:
       'Peeling Gel is designed for all skin types, even sensitive skin. Unlike harsh physical scrubs, this gel-based exfoliant gently buffs away dullness and roughness, promoting a renewed and luminous complexion without irritation.',
     category: 'skincare',
