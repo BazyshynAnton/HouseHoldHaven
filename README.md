@@ -43,15 +43,14 @@ Start the project `npm run dev`
 
 ## Screenshots of the Project  
 
-<div align="center">
-### 🟩Home Page🟩  
-</div>
+### <div align="center">🟩Home Page🟩</div>  
+ 
+
 
 ![homePage](https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/5237e8b1-2e56-4ac8-88ca-d52fa8a1f732)
 
-<div align="center">
-### 🟩Categories Page🟩  
-</div>
+### <div align="center">🟩Categories Page🟩</div>  
+
 
 ![categoriesPage](https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/20494e80-d910-4581-8948-3f47e6539976)
 
