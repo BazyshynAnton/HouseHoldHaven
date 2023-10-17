@@ -42,27 +42,40 @@ GitHub - https://github.com/BazyshynAnton
 Start the project `npm run dev`  
 
 ## Screenshots of the Project  
+
+<center>
 ### 🟩Home Page🟩  
+</center>
 
-![homePage](https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/32012688-46a6-4b19-bddc-8adb33d659cb)
+![homePage](https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/5237e8b1-2e56-4ac8-88ca-d52fa8a1f732)
 
+<center>
 ### 🟩Categories Page🟩  
+</center>
 
-![categoriesPage](https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/b5ee26cf-53dc-4d68-acc1-fd88bb1ad20e)
+![categoriesPage](https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/20494e80-d910-4581-8948-3f47e6539976)
 
-![category](https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/80da48b1-59f2-4e70-bf2a-06ac40eecaa5)
+![category](https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/543b7168-445f-4c11-89cb-d146a73d37c2)
 
+<center>
 ### 🟩Product Page🟩  
+</center>
 
-![productPage1](https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/25e74ddf-ff42-4774-9e9b-b56c6aa773ec)
+![productPage](https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/3d44474c-d3d0-4d19-8d59-8daa4af05967)
 
-![productPage2](https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/761dbaad-4be3-4173-a3a7-9b152c8c70ee)
+![add](https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/5c7c102c-8e2c-43ce-a212-b0bce88a70e4)
 
+<center>
 ### 🟩Shopping Cart🟩  
+</center>
 
-![shoppingCart](https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/d3697923-a63d-4220-9d77-9a7761a04b34)
+![cart](https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/3f496674-c3eb-4b43-b5cd-5ba6f313522e)
 
+<center>
+### 🟩Shopping Cart Page🟩  
+</center>
 
+![cartPage](https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/a2b4f6e9-f174-473b-a58a-6ff10d5cde4e)
 
 
 
