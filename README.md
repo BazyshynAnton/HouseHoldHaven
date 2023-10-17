@@ -1,4 +1,5 @@
-# House Hold Haven
+# House Hold Haven  
+<div align="center"><br>![websiteLogo](https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/04a98d0c-0c9e-4ae2-80f7-d3c0273967a7)</div>
 
 House Hold Haven is an online store for purchasing home and household products.  
 Our assortment includes everything you need to create a cozy and comfortable environment in your home.  
@@ -79,6 +80,9 @@ Start the project `npm run dev`
 
 
 
+### <div align="center"><br><br>🟩"Navigation Menu" on tablets or phones🟩</div>  
+
+<div align="center">![mobile](https://github.com/BazyshynAnton/HouseHoldHaven/assets/120124298/1b93be1f-97b0-4fe6-8f88-1900e60eb1d5)</div>
 
 
 
