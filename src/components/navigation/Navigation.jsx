@@ -248,17 +248,19 @@ const Navigation = () => {
                 alignItems: 'center',
               }}
             >
-              <Box sx={{ width: '60px', height: '60px' }}>
-                <img
-                  src={websiteLogo}
-                  alt="website-logo"
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                  }}
-                />
-              </Box>
+              <NavLink to="/" onClick={() => window.scrollTo(0, 0)}>
+                <Box sx={{ width: '60px', height: '60px' }}>
+                  <img
+                    src={websiteLogo}
+                    alt="website-logo"
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                    }}
+                  />
+                </Box>
+              </NavLink>
               <ListItem
                 sx={{
                   display: 'flex',
