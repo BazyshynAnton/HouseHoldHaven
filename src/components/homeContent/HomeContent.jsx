@@ -1,7 +1,10 @@
+import { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Box, Button, Container } from '@mui/material'
 import TrendingSlider from '../trendingSlider/TrendingSlider'
 import Items from '../items/Items'
+
+import { CartContext } from '../../context/CartContext'
 
 import products from '../../data/products'
 
@@ -15,6 +18,8 @@ import comfortable from '../../images/comfortable.jpg'
 import styles from './HomeContent.module.css'
 
 const HomeContent = () => {
+  const { setCounter } = useContext(CartContext)
+
   //styles for the "SHOP NOW" button
   const stylesForButton = {
     button: {
@@ -39,13 +44,11 @@ const HomeContent = () => {
           flexDirection: 'column',
           alignItems: 'center',
           marginTop: '50px',
-        }}
-      >
+        }}>
         <Box className={styles.categoriesContainer}>
           <NavLink
             to="/categories/furnitures"
-            onClick={() => window.scrollTo(0, 0)}
-          >
+            onClick={() => window.scrollTo(0, 0)}>
             <Box className={styles.furniture}>
               <img src={furniture} alt="furniture" />
               <h2>Live comfortably</h2>
@@ -53,8 +56,7 @@ const HomeContent = () => {
           </NavLink>
           <NavLink
             to="/categories/skincare"
-            onClick={() => window.scrollTo(0, 0)}
-          >
+            onClick={() => window.scrollTo(0, 0)}>
             <Box className={styles.skinCare}>
               <img src={skinCarePic} alt="skincare" />
               <h2>Skincare</h2>
@@ -64,8 +66,7 @@ const HomeContent = () => {
           <Box className={styles.containerTwo}>
             <NavLink
               to="/categories/kitchen"
-              onClick={() => window.scrollTo(0, 0)}
-            >
+              onClick={() => window.scrollTo(0, 0)}>
               <Box className={styles.kitchen}>
                 <img src={kitchen} alt="kitchen" />
                 <h2>Kitchen</h2>
@@ -73,8 +74,7 @@ const HomeContent = () => {
             </NavLink>
             <NavLink
               to="/categories/electronics"
-              onClick={() => window.scrollTo(0, 0)}
-            >
+              onClick={() => window.scrollTo(0, 0)}>
               <Box className={styles.electronics}>
                 <img src={electronics} alt="electronics" />
                 <h2>Electronics</h2>
@@ -93,8 +93,13 @@ const HomeContent = () => {
                 <NavLink
                   key={product.id}
                   to={`/categories/product/${product.id}`}
-                  onClick={() => window.scrollTo(0, 0)}
-                >
+                  onClick={() => {
+                    setCounter(1)
+                    //setTimeout - because default window.scrollTo(0, 0) doesn't work in Mozilla FireFox
+                    setTimeout(() => {
+                      window.scrollTo(0, 0)
+                    }, 0)
+                  }}>
                   <Items
                     key={product.id}
                     img1={product.img1}
@@ -118,14 +123,13 @@ const HomeContent = () => {
               </p>
               <NavLink
                 to="/categories/all"
-                onClick={() => window.scrollTo(0, 0)}
-              >
+                onClick={() => window.scrollTo(0, 0)}>
                 <Button sx={stylesForButton.button}>SHOP NOW</Button>
               </NavLink>
             </Box>
           </Box>
           <Box className={styles.adPictureContainer}>
-            <img src={harmonius} />
+            <img src={harmonius} alt="example" />
           </Box>
         </Box>
 
@@ -135,7 +139,7 @@ const HomeContent = () => {
         {/*ad block*/}
         <Box className={styles.adContainer2}>
           <Box className={styles.adPictureContainer2}>
-            <img src={comfortable} alt="Shop" />
+            <img src={comfortable} alt="example" />
           </Box>
           <Box className={styles.adTextContainer2}>
             <Box>
@@ -146,8 +150,7 @@ const HomeContent = () => {
               </p>
               <NavLink
                 to="/categories/all"
-                onClick={() => window.scrollTo(0, 0)}
-              >
+                onClick={() => window.scrollTo(0, 0)}>
                 <Button sx={stylesForButton.button}>SHOP NOW</Button>
               </NavLink>
             </Box>

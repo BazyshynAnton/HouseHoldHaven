@@ -12,7 +12,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 30px;
+  margin-top: 150px;
 }
 .productMainContainer h2 {
   text-align: center;
@@ -21,7 +21,7 @@
 }
 
 .productBox {
-  margin-top: 100px;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

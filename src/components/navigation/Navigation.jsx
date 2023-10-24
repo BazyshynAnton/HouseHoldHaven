@@ -63,7 +63,7 @@ const Navigation = () => {
   const isDesktop = useMediaQuery('(min-width: 480px)')
 
   //useContext to get data from cart context (CartContext)
-  const { cartProducts } = useContext(CartContext)
+  const { cartProducts, setCounter } = useContext(CartContext)
 
   //function - results in an open if it was closed, and a close if it was open
   const handleCartIconClick = () => {
@@ -79,14 +79,12 @@ const Navigation = () => {
     <Box
       sx={{
         background: '#fff',
-      }}
-    >
+      }}>
       <AppBar
         sx={{
           background: 'white',
           boxShadow: 'none',
-        }}
-      >
+        }}>
         <Container>
           {isDesktop && (
             <Toolbar
@@ -95,10 +93,17 @@ const Navigation = () => {
                 display: 'flex',
                 justifyContent: 'space-between',
               }}
-              disableGutters
-            >
+              disableGutters>
               <>
-                <NavLink to="/" onClick={() => window.scrollTo(0, 0)}>
+                <NavLink
+                  to="/"
+                  onClick={() => {
+                    setCounter(1)
+                    //setTimeout - because default window.scrollTo(0, 0) doesn't work in Mozilla FireFox
+                    setTimeout(() => {
+                      window.scrollTo(0, 0)
+                    }, 0)
+                  }}>
                   <Box sx={{ width: '60px', height: '60px' }}>
                     <img
                       src={websiteLogo}
@@ -114,15 +119,19 @@ const Navigation = () => {
                 <List
                   sx={{
                     display: 'flex',
-                  }}
-                >
+                  }}>
                   <Box sx={{ display: 'flex' }}>
                     <ListItem>
                       <NavLink
                         to="."
                         style={style}
-                        onClick={() => window.scrollTo(0, 0)}
-                      >
+                        onClick={() => {
+                          setCounter(1)
+                          //setTimeout - because default window.scrollTo(0, 0) doesn't work in Mozilla FireFox
+                          setTimeout(() => {
+                            window.scrollTo(0, 0)
+                          }, 0)
+                        }}>
                         <h5 className={styles.textInBar}>HOME</h5>
                       </NavLink>
                     </ListItem>
@@ -134,15 +143,20 @@ const Navigation = () => {
                     <ListItem>
                       <NavLink
                         to="/categories/product/8853fbbe-2649-11ee-be56-0242ac120002"
-                        onClick={() => window.scrollTo(0, 0)}
+                        onClick={() => {
+                          setCounter(1)
+                          //setTimeout - because default window.scrollTo(0, 0) doesn't work in Mozilla FireFox
+                          setTimeout(() => {
+                            window.scrollTo(0, 0)
+                          }, 0)
+                        }}
                         style={{
                           ...style,
                           width: '110px',
                           whiteSpace: 'nowrap',
                           textDecoration: 'none',
                           color: 'black',
-                        }}
-                      >
+                        }}>
                         <h5 className={styles.textInBar}>PRODUCT PAGE</h5>
                       </NavLink>
                     </ListItem>
@@ -151,8 +165,7 @@ const Navigation = () => {
                       {/* Shopping cart in navbar */}
                       <Box
                         sx={{ color: 'black', cursor: 'pointer' }}
-                        onClick={handleCartIconClick}
-                      >
+                        onClick={handleCartIconClick}>
                         <ShoppingCartIcon />
                         {!!cartProducts.length && (
                           <span style={stylesForIndicator}>
@@ -183,8 +196,7 @@ const Navigation = () => {
                 display: 'flex',
                 justifyContent: 'flex-end',
               }}
-              disableGutters
-            >
+              disableGutters>
               <List sx={{ display: 'flex' }}>
                 <IconButton onClick={() => setOpen(true)}>
                   <MenuIcon />
@@ -193,8 +205,7 @@ const Navigation = () => {
                   {/* Shopping cart in navbar */}
                   <Box
                     sx={{ color: 'black', cursor: 'pointer' }}
-                    onClick={handleCartIconClick}
-                  >
+                    onClick={handleCartIconClick}>
                     <ShoppingCartIcon />
                     {!!cartProducts.length && (
                       <span style={stylesForIndicator}>
@@ -225,8 +236,7 @@ const Navigation = () => {
               background: 'rgba(0, 0, 0, 0.5)',
               zIndex: '998',
             }}
-            onClick={handleCloseCartMenu}
-          ></Box>
+            onClick={handleCloseCartMenu}></Box>
         )}
 
         {/*pull-down menu (for mobile version)*/}
@@ -235,8 +245,7 @@ const Navigation = () => {
             open={open}
             onOpen={() => setOpen(true)}
             onClose={() => setOpen(false)}
-            anchor="top"
-          >
+            anchor="top">
             <IconButton onClick={() => setOpen(false)}>
               <KeyboardArrowUpIcon />
             </IconButton>
@@ -246,9 +255,17 @@ const Navigation = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-              }}
-            >
-              <NavLink to="/" onClick={() => window.scrollTo(0, 0)}>
+              }}>
+              <NavLink
+                to="/"
+                onClick={() => {
+                  setCounter(1)
+                  //setTimeout - because default window.scrollTo(0, 0) doesn't work in Mozilla FireFox
+                  setTimeout(() => {
+                    window.scrollTo(0, 0)
+                  }, 0)
+                  setOpen(false)
+                }}>
                 <Box sx={{ width: '60px', height: '60px' }}>
                   <img
                     src={websiteLogo}
@@ -265,16 +282,18 @@ const Navigation = () => {
                 sx={{
                   display: 'flex',
                   justifyContent: 'center',
-                }}
-              >
+                }}>
                 <NavLink
                   to="/"
                   style={style}
                   onClick={() => {
-                    window.scrollTo(0, 0)
+                    setCounter(1)
+                    //setTimeout - because default window.scrollTo(0, 0) doesn't work in Mozilla FireFox
+                    setTimeout(() => {
+                      window.scrollTo(0, 0)
+                    }, 0)
                     setOpen(false)
-                  }}
-                >
+                  }}>
                   <h5 className={styles.textInBar}>HOME</h5>
                 </NavLink>
               </ListItem>
@@ -282,16 +301,18 @@ const Navigation = () => {
                 sx={{
                   display: 'flex',
                   justifyContent: 'center',
-                }}
-              >
+                }}>
                 <NavLink
                   to="categories/all"
                   style={style}
                   onClick={() => {
-                    window.scrollTo(0, 0)
+                    setCounter(1)
+                    //setTimeout - because default window.scrollTo(0, 0) doesn't work in Mozilla FireFox
+                    setTimeout(() => {
+                      window.scrollTo(0, 0)
+                    }, 0)
                     setOpen(false)
-                  }}
-                >
+                  }}>
                   <h5 className={styles.textInBar}>CATEGORIES</h5>
                 </NavLink>
               </ListItem>
@@ -300,12 +321,15 @@ const Navigation = () => {
                   display: 'flex',
                   justifyContent: 'center',
                   textAlign: 'center',
-                }}
-              >
+                }}>
                 <NavLink
                   to="/categories/product/8853fbbe-2649-11ee-be56-0242ac120002"
                   onClick={() => {
-                    window.scrollTo(0, 0)
+                    setCounter(1)
+                    //setTimeout - because default window.scrollTo(0, 0) doesn't work in Mozilla FireFox
+                    setTimeout(() => {
+                      window.scrollTo(0, 0)
+                    }, 0)
                     setOpen(false)
                   }}
                   style={{
@@ -314,8 +338,7 @@ const Navigation = () => {
                     whiteSpace: 'nowrap',
                     textDecoration: 'none',
                     color: 'black',
-                  }}
-                >
+                  }}>
                   <h5 className={styles.textInBar}>PRODUCT PAGE</h5>
                 </NavLink>
               </ListItem>

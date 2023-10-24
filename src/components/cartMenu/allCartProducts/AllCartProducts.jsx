@@ -12,6 +12,10 @@ const AllCartProducts = () => {
 
   const handleRemove = () => {
     removeAllFromCart()
+    //setTimeout - because default window.scrollTo(0, 0) doesn't work in Mozilla FireFox
+    setTimeout(() => {
+      window.scrollTo(0, 0)
+    }, 0)
   }
 
   //function - remove item from the cart
@@ -34,12 +38,10 @@ const AllCartProducts = () => {
           flexDirection: 'column',
           width: '100%',
           marginTop: '100px',
-        }}
-      >
+        }}>
         <NavLink
           to="/"
-          style={{ width: '100px', color: 'black', textDecoration: 'none' }}
-        >
+          style={{ width: '100px', color: 'black', textDecoration: 'none' }}>
           <button
             style={{
               width: '100px',
@@ -51,8 +53,7 @@ const AllCartProducts = () => {
               transition: '0.2s ease-in-out',
             }}
             className={styles.clearAllBtn}
-            onClick={handleRemove}
-          >
+            onClick={handleRemove}>
             Clear All
           </button>
         </NavLink>
@@ -71,12 +72,11 @@ const AllCartProducts = () => {
                 border: '1px solid #000',
                 textAlign: 'center',
                 padding: '10px',
-              }}
-            >
+              }}>
               <Box sx={{ width: '150px', height: '150px' }}>
                 <img
                   src={product.img1}
-                  alt={product.name}
+                  alt="product"
                   style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                 />
               </Box>
@@ -100,8 +100,7 @@ const AllCartProducts = () => {
                   position: 'absolute',
                   bottom: '5px',
                   left: '10px',
-                }}
-              >
+                }}>
                 <button
                   onClick={() =>
                     updateQuantity(product.id, product.quantity - 1)
@@ -116,8 +115,7 @@ const AllCartProducts = () => {
                     cursor: 'pointer',
                     transition: 'all 0.2s',
                     padding: '0px 7px',
-                  }}
-                >
+                  }}>
                   -
                 </button>
                 <span
@@ -127,8 +125,7 @@ const AllCartProducts = () => {
                     alignItems: 'center',
                     width: '20px',
                     cursor: 'default',
-                  }}
-                >
+                  }}>
                   {product.quantity}
                 </span>
                 <button
@@ -145,8 +142,7 @@ const AllCartProducts = () => {
                     cursor: 'pointer',
                     transition: 'all 0.2s',
                     padding: '0px 5px',
-                  }}
-                >
+                  }}>
                   +
                 </button>
               </Box>
@@ -163,15 +159,13 @@ const AllCartProducts = () => {
           style={{
             width: '150px',
             height: '40px',
-            border: 'none',
             fontSize: '0.8rem',
             textTransform: 'uppercase',
             fontWeight: 'bold',
             cursor: 'pointer',
             transition: 'all 0.2s',
             border: '2px solid black ',
-          }}
-        >
+          }}>
           Go To Checkout
         </button>
       </Box>

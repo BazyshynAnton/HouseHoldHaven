@@ -1,4 +1,4 @@
-import { Box, Button, Container, TextField } from '@mui/material'
+import { Box, Button, Container } from '@mui/material'
 
 import styles from './Footer.module.css'
 import { useState } from 'react'
@@ -38,8 +38,7 @@ const Footer = () => {
           <form
             onSubmit={handleFormSubmit}
             className={styles.formContainer}
-            style={{ display: 'flex', flexDirection: 'row' }}
-          >
+            style={{ display: 'flex', flexDirection: 'row' }}>
             <input
               name="email"
               type="email"

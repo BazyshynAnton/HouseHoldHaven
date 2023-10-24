@@ -34,8 +34,7 @@ const CartMenu = ({ isOpen, handleCloseCartMenu }) => {
   return (
     //Style classes from CartMenu.module.css are added depending on the value of isOpen
     <Box
-      className={`${styles.cartMenu} ${isOpen ? styles.cartMenuOpened : ''}`}
-    >
+      className={`${styles.cartMenu} ${isOpen ? styles.cartMenuOpened : ''}`}>
       <Box className={styles.txtContainer}>
         <h3>Your Shopping Cart({cartProducts.length})</h3>
         <CloseIcon
@@ -66,22 +65,20 @@ const CartMenu = ({ isOpen, handleCloseCartMenu }) => {
             padding: '0.2rem',
             marginTop: '50px',
             background: 'white',
-          }}
-        >
+          }}>
           <Box className={styles.fullProductBox}>
             <Box className={styles.fullProduct}>
               {cartProducts.slice(0, 2).map((product) => (
                 <Box className={styles.cartProduct} key={product.id}>
                   <Box className={styles.leftImg}>
-                    <img src={product.img1} />
+                    <img src={product.img1} alt="product" />
                   </Box>
                   <Box className={styles.cartInfoMiddle}>
                     <p>{product.name}</p>
 
                     <Box
                       sx={{ display: 'flex', border: '1px solid black' }}
-                      className={styles.cartBtns}
-                    >
+                      className={styles.cartBtns}>
                       <button
                         onClick={() =>
                           updateQuantity(product.id, product.quantity - 1)
@@ -95,8 +92,7 @@ const CartMenu = ({ isOpen, handleCloseCartMenu }) => {
                           fontWeight: 'bold',
                           cursor: 'pointer',
                           transition: 'all 0.2s',
-                        }}
-                      >
+                        }}>
                         -
                       </button>
                       <span
@@ -106,8 +102,7 @@ const CartMenu = ({ isOpen, handleCloseCartMenu }) => {
                           alignItems: 'center',
                           width: '30px',
                           cursor: 'default',
-                        }}
-                      >
+                        }}>
                         {product.quantity}
                       </span>
                       <button
@@ -123,8 +118,7 @@ const CartMenu = ({ isOpen, handleCloseCartMenu }) => {
                           fontWeight: 'bold',
                           cursor: 'pointer',
                           transition: 'all 0.2s',
-                        }}
-                      >
+                        }}>
                         +
                       </button>
                     </Box>
@@ -147,22 +141,19 @@ const CartMenu = ({ isOpen, handleCloseCartMenu }) => {
                     justifyContent: 'center',
                     alignItems: 'center',
                     marginTop: '10px',
-                  }}
-                >
+                  }}>
                   <NavLink
                     to="/cart"
                     onClick={() => {
                       window.scrollTo(0, 0)
                       handleCloseCartMenu()
-                    }}
-                  >
+                    }}>
                     <button
                       style={{
                         padding: '4px',
                         border: '1px solid grey',
                         cursor: 'pointer',
-                      }}
-                    >
+                      }}>
                       SHOW MORE({cartProducts.length - 2})
                     </button>
                   </NavLink>
@@ -179,15 +170,13 @@ const CartMenu = ({ isOpen, handleCloseCartMenu }) => {
               style={{
                 width: '150px',
                 height: '40px',
-                border: 'none',
                 fontSize: '0.8rem',
                 textTransform: 'uppercase',
                 fontWeight: 'bold',
                 cursor: 'pointer',
                 transition: 'all 0.2s',
                 border: '2px solid black ',
-              }}
-            >
+              }}>
               Go To Checkout
             </button>
           </Box>

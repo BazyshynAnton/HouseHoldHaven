@@ -22,12 +22,14 @@ function TrendingItem() {
         <Box key={product.id}>
           <NavLink
             onClick={() => {
-              handleNavLinkClick()
               setCounter(1)
+              //setTimeout - because default window.scrollTo(0, 0) doesn't work in Mozilla FireFox
+              setTimeout(() => {
+                window.scrollTo(0, 0)
+              }, 0)
             }}
             to={`/categories/product/${product.id}`}
-            style={{ textDecoration: 'none', color: 'black' }}
-          >
+            style={{ textDecoration: 'none', color: 'black' }}>
             <Items
               key={product.id}
               img1={product.img1}
