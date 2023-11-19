@@ -1,14 +1,15 @@
+@import '../../scssMixinsAndVariables/mixins.scss';
+@import '../../scssMixinsAndVariables/variables.scss';
+
 .productMainContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include blockSettings2(flex, center, center);
   flex-direction: column;
   margin-top: 150px;
 
   h2 {
     text-align: center;
     font-size: 2rem;
-    font-family: 'Blinker';
+    font-family: $blinkerFont;
   }
 }
 .productBox {
@@ -18,21 +19,19 @@
   flex-direction: row;
 }
 .productDiv {
+  position: relative;
   margin-top: 50px;
   margin-bottom: 50px;
   width: 100%;
   display: flex;
-  position: relative;
   justify-content: center;
 }
 
 .productLeft {
+  @include blockSettings2(flex, center, center);
   width: 50%;
   height: 100%;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .bigImg {
@@ -60,43 +59,35 @@
 }
 
 .smallImgs {
-  display: flex;
+  @include blockSettings2(flex, center, center);
   gap: 0.3rem;
-  justify-content: center;
-  align-items: center;
   padding: 3rem 0rem 0rem 0rem;
 }
 
 .productRight {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include blockSettings3(flex, column, center);
   width: 50%;
   height: 500px;
 }
 
 .productText {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include blockSettings2(flex, center, center);
   margin-bottom: 50px;
   p {
     line-height: 1.4;
     font-size: 1.2rem;
-    font-family: 'Ubuntu';
+    font-family: $ubuntuFont;
   }
 }
 
 .infoContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include blockSettings2(flex, center, center);
   height: 50px;
   gap: 3rem;
 
   h3 {
-    font-family: 'Blinker';
+    font-family: $blinkerFont;
     font-size: 1.4rem;
   }
 }
@@ -111,23 +102,19 @@
 }
 
 .counterOutput {
+  @include blockSettings2(flex, center, center);
   background: white;
   font-size: 1.5rem;
   width: 46px;
   height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-right: 1px solid black;
   border-left: 1px solid black;
-  font-family: 'Blinker';
+  font-family: $blinkerFont;
   cursor: default;
 }
 
 .btnContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include blockSettings2(flex, center, center);
   gap: 1.8rem;
   height: 50px;
   margin-top: 50px;
@@ -177,7 +164,7 @@
   transform: translate(-50%);
   transition: top 0.6s ease-out;
   z-index: 999999999;
-  font-family: 'Blinker';
+  font-family: $blinkerFont;
   border-radius: 20px;
 }
 

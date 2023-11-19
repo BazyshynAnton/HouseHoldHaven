@@ -36,22 +36,20 @@ const Categories = () => {
 
   return (
     <Container>
-      <Box
-        sx={{
+      <div
+        style={{
           display: 'flex',
           alignItems: 'center',
           flexDirection: 'column',
           marginTop: '100px',
-        }}
-      >
-        <Box
-          sx={{
+        }}>
+        <div
+          style={{
             width: '100%',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-          }}
-        >
+          }}>
           <NavLink
             to="/"
             onClick={() => window.scrollTo(0, 0)}
@@ -61,8 +59,7 @@ const Categories = () => {
               display: 'flex',
               textAlign: 'center',
               textDecoration: 'none',
-            }}
-          >
+            }}>
             <NavigateBeforeIcon />
             Home
           </NavLink>
@@ -74,17 +71,16 @@ const Categories = () => {
               textTransform: 'uppercase',
               fontWeight: '800',
               fontFamily: 'Blinker, sans-serif',
-            }}
-          >
+            }}>
             {filteredProducts.length > 0
               ? filteredProducts.length === 20
                 ? 'ALL'
                 : filteredProducts[0].category
               : ''}
           </h3>
-        </Box>
+        </div>
 
-        <Box sx={{ marginTop: '40px' }} className={styles.sortBtnContainer}>
+        <div style={{ marginTop: '40px' }} className={styles.sortBtnContainer}>
           <ul>
             <li>
               <NavLink to="/categories/all">
@@ -122,8 +118,8 @@ const Categories = () => {
               </NavLink>
             </li>
           </ul>
-        </Box>
-        <Box className={styles.cardsContainer}>
+        </div>
+        <div className={styles.cardsContainer}>
           {/*checks if there are available products*/}
           {areProductsAvailable ? (
             filteredProducts.map((product) => (
@@ -131,8 +127,7 @@ const Categories = () => {
                 key={product.id}
                 to={`/categories/product/${product.id}`}
                 onClick={() => window.scrollTo(0, 0)}
-                style={{ textDecoration: 'none', color: 'black' }}
-              >
+                style={{ textDecoration: 'none', color: 'black' }}>
                 <Items
                   img1={product.img1}
                   name={product.name}
@@ -144,8 +139,8 @@ const Categories = () => {
             // if there are no products, redirect to the NotFound page
             <h3>No products found in this category.</h3>
           )}
-        </Box>
-      </Box>
+        </div>
+      </div>
     </Container>
   )
 }

@@ -1,6 +1,5 @@
 import { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
-import { Box } from '@mui/material'
 import Items from '../items/Items'
 
 import { CartContext } from '../../context/CartContext'
@@ -19,7 +18,7 @@ function TrendingItem() {
   return (
     <>
       {filteredProducts.map((product) => (
-        <Box key={product.id}>
+        <div key={product.id}>
           <NavLink
             onClick={() => {
               setCounter(1)
@@ -37,7 +36,7 @@ function TrendingItem() {
               price={product.price}
             />
           </NavLink>
-        </Box>
+        </div>
       ))}
     </>
   )

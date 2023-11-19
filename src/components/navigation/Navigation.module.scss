@@ -1,7 +1,9 @@
+@import '../../scssMixinsAndVariables/variables.scss';
+
 .textInBar {
   font-size: 1rem;
   margin: 10px 0px;
-  font-family: Lora, serif;
+  font-family: $loraFont;
   &:hover {
     text-decoration: underline;
   }

@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+@mixin blockSettings($display, $flexDirection, $justifyContent) {
+  display: $display;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+}
+
+@mixin blockSettings2($display, $justifyContent, $alignItems) {
+  display: $display;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}
+
+@mixin blockSettings3($display, $flexDirection, $alignItems) {
+  display: $display;
+  align-items: $alignItems;
+  flex-direction: $flexDirection;
+}

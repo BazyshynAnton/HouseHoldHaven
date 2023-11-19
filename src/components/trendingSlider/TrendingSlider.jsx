@@ -20,22 +20,22 @@ function TrendingSlider() {
 
   return (
     <Container>
-      <Box className={styles.mainContainer}>
-        <Box className={styles.titleBtns}>
+      <div className={styles.mainContainer}>
+        <div className={styles.titleBtns}>
           <h3>Trending Now</h3>
-          <Box className={styles.btns}>
+          <div className={styles.btns}>
             <button title="scroll left" onClick={slideLeft}>
               <NavigateBeforeIcon />
             </button>
             <button title="scroll right" onClick={slideRight}>
               <NavigateNextIcon />
             </button>
-          </Box>
-        </Box>
-        <Box className={styles.rowContainer} id="slider">
+          </div>
+        </div>
+        <div className={styles.rowContainer} id="slider">
           <TrendingProducts />
-        </Box>
-      </Box>
+        </div>
+      </div>
     </Container>
   )
 }

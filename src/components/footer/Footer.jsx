@@ -1,7 +1,7 @@
-import { Box, Button, Container } from '@mui/material'
+import { useState } from 'react'
+import { Button, Container } from '@mui/material'
 
 import styles from './Footer.module.css'
-import { useState } from 'react'
 
 const Footer = () => {
   //contains styles for the button
@@ -31,9 +31,9 @@ const Footer = () => {
   }
 
   return (
-    <Box sx={{ background: 'black', height: '300px', marginTop: '40px' }}>
+    <div style={{ background: 'black', height: '300px', marginTop: '40px' }}>
       <Container>
-        <Box className={styles.footerContainer}>
+        <div className={styles.footerContainer}>
           <h3>Newsletter</h3>
           <form
             onSubmit={handleFormSubmit}
@@ -59,7 +59,7 @@ const Footer = () => {
               Subsribe
             </Button>
           </form>
-          <Box className={styles.lastList}>
+          <div className={styles.lastList}>
             <ul>
               <li>About</li>
               <li>Store locator</li>
@@ -68,11 +68,11 @@ const Footer = () => {
               <li>Careers</li>
               <li>Contact Us</li>
             </ul>
-          </Box>
+          </div>
           <h5>Built with Love.</h5>
-        </Box>
+        </div>
       </Container>
-    </Box>
+    </div>
   )
 }
 

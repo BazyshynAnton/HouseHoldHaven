@@ -1,6 +1,5 @@
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
-import { Box } from '@mui/material'
 
 import CloseIcon from '@mui/icons-material/Close'
 import shoppingEmptyCart from '../../images/shoppingEmptyCart.jpg'
@@ -33,51 +32,51 @@ const CartMenu = ({ isOpen, handleCloseCartMenu }) => {
 
   return (
     //Style classes from CartMenu.module.css are added depending on the value of isOpen
-    <Box
+    <div
       className={`${styles.cartMenu} ${isOpen ? styles.cartMenuOpened : ''}`}>
-      <Box className={styles.txtContainer}>
+      <div className={styles.txtContainer}>
         <h3>Your Shopping Cart({cartProducts.length})</h3>
         <CloseIcon
           sx={{ fontSize: '1.8rem', cursor: 'pointer' }}
           onClick={handleCloseCartMenu}
         />
-      </Box>
+      </div>
 
       {
         //-check to see if there are items in shopping cart
       }
       {!cartProducts.length && (
-        <Box className={styles.emptyContainer}>
-          <Box className={styles.imgInCart}>
+        <div className={styles.emptyContainer}>
+          <div className={styles.imgInCart}>
             <img src={shoppingEmptyCart} alt="keep browsing" />
-          </Box>
+          </div>
           <p>Your cart is empty.</p>
           <button onClick={handleCloseCartMenu}>Keep Browsing</button>
-        </Box>
+        </div>
       )}
       {
         //-check to see if there are items in shopping cart
       }
       {!!cartProducts.length && (
-        <Box
-          sx={{
+        <div
+          style={{
             height: '100%',
             padding: '0.2rem',
             marginTop: '50px',
             background: 'white',
           }}>
-          <Box className={styles.fullProductBox}>
-            <Box className={styles.fullProduct}>
+          <div className={styles.fullProductBox}>
+            <div className={styles.fullProduct}>
               {cartProducts.slice(0, 2).map((product) => (
-                <Box className={styles.cartProduct} key={product.id}>
-                  <Box className={styles.leftImg}>
+                <div className={styles.cartProduct} key={product.id}>
+                  <div className={styles.leftImg}>
                     <img src={product.img1} alt="product" />
-                  </Box>
-                  <Box className={styles.cartInfoMiddle}>
+                  </div>
+                  <div className={styles.cartInfoMiddle}>
                     <p>{product.name}</p>
 
-                    <Box
-                      sx={{ display: 'flex', border: '1px solid black' }}
+                    <div
+                      style={{ display: 'flex', border: '1px solid black' }}
                       className={styles.cartBtns}>
                       <button
                         onClick={() =>
@@ -121,21 +120,21 @@ const CartMenu = ({ isOpen, handleCloseCartMenu }) => {
                         }}>
                         +
                       </button>
-                    </Box>
-                  </Box>
-                  <Box className={styles.rightInfo}>
+                    </div>
+                  </div>
+                  <div className={styles.rightInfo}>
                     <p>{product.defaultPrice * product.quantity}.00$</p>
                     <CloseIcon
                       sx={{ cursor: 'pointer' }}
                       onClick={() => handleRemoveItem(product.id)}
                     />
-                  </Box>
-                </Box>
+                  </div>
+                </div>
               ))}
 
               {cartProducts.length > 2 && (
-                <Box
-                  sx={{
+                <div
+                  style={{
                     display: 'flex',
                     width: '100%',
                     justifyContent: 'center',
@@ -157,15 +156,15 @@ const CartMenu = ({ isOpen, handleCloseCartMenu }) => {
                       SHOW MORE({cartProducts.length - 2})
                     </button>
                   </NavLink>
-                </Box>
+                </div>
               )}
-            </Box>
-          </Box>
-          <Box className={styles.totalContainer}>
-            <Box className={styles.txtTotal}>
+            </div>
+          </div>
+          <div className={styles.totalContainer}>
+            <div className={styles.txtTotal}>
               <p>Subtotal</p>
               <p>{calculateTotalAmount()}.00$</p>
-            </Box>
+            </div>
             <button
               style={{
                 width: '150px',
@@ -179,10 +178,10 @@ const CartMenu = ({ isOpen, handleCloseCartMenu }) => {
               }}>
               Go To Checkout
             </button>
-          </Box>
-        </Box>
+          </div>
+        </div>
       )}
-    </Box>
+    </div>
   )
 }
 

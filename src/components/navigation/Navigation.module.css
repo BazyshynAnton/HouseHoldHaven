@@ -1,7 +1,7 @@
 .textInBar {
   font-size: 1rem;
   margin: 10px 0px;
-  font-family: Lora, serif;
+  font-family: "Lora";
 }
 .textInBar:hover {
   text-decoration: underline;

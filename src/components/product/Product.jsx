@@ -1,13 +1,14 @@
 import { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { CartContext } from '../../context/CartContext'
+import { Container } from '@mui/material'
+
 import TrendingSlider from '../trendingSlider/TrendingSlider'
 import DoneOutlineIcon from '@mui/icons-material/DoneOutline'
 
 import products from '../../data/products'
 
 import styles from './Product.module.css'
-import { Box, Container } from '@mui/material'
 
 const Product = () => {
   const [notificationMessage, setNotificationMessage] = useState('') //contains a notification message that appears when an item is added to the cart
@@ -90,52 +91,51 @@ const Product = () => {
 
   return (
     <Container>
-      <Box className={styles.productMainContainer}>
+      <div className={styles.productMainContainer}>
         <h2>{currentProduct.name}</h2>
-        <Box className={styles.productBox}>
-          <Box className={styles.productLeft}>
-            <Box className={styles.bigImg}>
+        <div className={styles.productBox}>
+          <div className={styles.productLeft}>
+            <div className={styles.bigImg}>
               <img src={image} alt="product" />
-            </Box>
-            <Box className={styles.smallImgs}>
-              <Box className={styles.imgsSmallBlock}>
+            </div>
+            <div className={styles.smallImgs}>
+              <div className={styles.imgsSmallBlock}>
                 <img
                   onMouseOver={changeImage}
                   src={currentProduct.img2}
                   alt="product"
                 />
-              </Box>
-              <Box className={styles.imgsSmallBlock}>
+              </div>
+              <div className={styles.imgsSmallBlock}>
                 <img
                   onMouseOver={changeImage}
                   src={currentProduct.img3}
                   alt="product"
                 />
-              </Box>
-              <Box className={styles.imgsSmallBlock}>
+              </div>
+              <div className={styles.imgsSmallBlock}>
                 <img
                   onMouseOver={changeImage}
                   src={currentProduct.img4}
                   alt="product"
                 />
-              </Box>
-            </Box>
-          </Box>
+              </div>
+            </div>
+          </div>
 
-          <Box className={styles.productRight}>
-            <Box className={styles.productText}>
+          <div className={styles.productRight}>
+            <div className={styles.productText}>
               <p>{currentProduct.description}</p>
-            </Box>
-            <Box className={styles.infoContainer}>
+            </div>
+            <div className={styles.infoContainer}>
               <h3>Quantity</h3>
-              <Box
-                sx={{
+              <div
+                style={{
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   border: '1px solid black',
-                }}
-              >
+                }}>
                 <button className={styles.controlBtn} onClick={decrease}>
                   -
                 </button>
@@ -143,35 +143,33 @@ const Product = () => {
                 <button className={styles.controlBtn} onClick={increase}>
                   +
                 </button>
-              </Box>
+              </div>
               <h3>{calcPrice(counter)}.00$</h3>
-            </Box>
-            <Box className={styles.btnContainer}>
+            </div>
+            <div className={styles.btnContainer}>
               <button
                 className={styles.addToCartButton}
-                onClick={handleAddToCart}
-              >
+                onClick={handleAddToCart}>
                 ADD TO CART
               </button>
               <button className={styles.buyBtn}>BUY NOW</button>
-            </Box>
-          </Box>
-        </Box>
+            </div>
+          </div>
+        </div>
         {/* Notification message */}
-        <Box
+        <div
           className={`${styles.notification} ${
             notificationVisible
               ? styles.notificationShow
               : styles.notificationHide
-          }`}
-        >
+          }`}>
           <p>
             {notificationMessage}
             <DoneOutlineIcon sx={{ color: 'green' }} />
           </p>
-        </Box>
+        </div>
         <TrendingSlider />
-      </Box>
+      </div>
     </Container>
   )
 }

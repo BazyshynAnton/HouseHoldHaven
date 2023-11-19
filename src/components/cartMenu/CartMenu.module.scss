@@ -1,3 +1,6 @@
+@import '../../scssMixinsAndVariables/mixins.scss';
+@import '../../scssMixinsAndVariables/variables.scss';
+
 //CartPage
 .listOfProducts {
   width: 100%;
@@ -32,16 +35,15 @@
 }
 
 .emptyContainer {
-  display: flex;
+  @include blockSettings2(flex, center, center);
+
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 450px;
   p {
     margin: 15px 0 15px 0;
     font-size: 1.4rem;
-    font-family: 'Blinker';
+    font-family: $blinkerFont;
     cursor: default;
   }
   button {
@@ -61,11 +63,10 @@
 }
 
 .txtContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include blockSettings(flex, row, space-between);
+
   font-size: 1.3rem;
-  font-family: 'Blinker';
+  font-family: $blinkerFont;
   font-weight: 700;
 }
 
@@ -78,9 +79,8 @@
 }
 
 .cartProduct {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  @include blockSettings(flex, row, center);
+
   width: 100%;
   padding: 10px 0;
   border: 1px solid grey;
@@ -97,12 +97,10 @@
 
 .cartInfoMiddle {
   width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include blockSettings(flex, column, space-between);
   padding-left: 10px;
   font-size: 1.3rem;
-  font-family: 'Nunito';
+  font-family: $nunitoFont;
 }
 
 .cartBtns {
@@ -121,30 +119,26 @@
 
 .rightInfo {
   width: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include blockSettings(flex, column, space-between);
   align-items: center;
   p {
-    font-family: 'Nunito';
+    font-family: $nunitoFont;
     font-weight: 700;
   }
 }
 
 .totalContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  @include blockSettings3(flex, row, center);
+  justify-content: space-between;
   width: 100%;
   height: 70px;
-  justify-content: space-between;
   background: white;
   border-top: 2px dashed black;
   margin-top: 20px;
 
   p {
     font-size: 1.3rem;
-    font-family: 'Nunito';
+    font-family: $nunitoFont;
     font-weight: 700;
   }
   button {

@@ -1,3 +1,6 @@
+@import '../../scssMixinsAndVariables/mixins.scss';
+@import '../../scssMixinsAndVariables/variables.scss';
+
 .card {
   display: flex;
   flex-direction: column;
@@ -25,17 +28,15 @@
 }
 
 .text {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  @include blockSettings(flex, column, flex-end);
   height: 100px;
 
   h3 {
-    font-family: 'Lora', serif;
+    font-family: $loraFont;
     font-size: 0.9rem;
   }
   h5 {
-    font-family: 'Nunito', sans-serif;
+    font-family: $nunitoFont;
     font-weight: 800;
     font-size: 1rem;
     padding: 5px 0;

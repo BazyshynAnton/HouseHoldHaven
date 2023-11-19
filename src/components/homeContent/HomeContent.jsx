@@ -38,55 +38,55 @@ const HomeContent = () => {
 
   return (
     <Container>
-      <Box
-        sx={{
+      <div
+        style={{
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           marginTop: '50px',
         }}>
-        <Box className={styles.categoriesContainer}>
+        <div className={styles.categoriesContainer}>
           <NavLink
             to="/categories/furnitures"
             onClick={() => window.scrollTo(0, 0)}>
-            <Box className={styles.furniture}>
+            <div className={styles.furniture}>
               <img src={furniture} alt="furniture" />
               <h2>Live comfortably</h2>
-            </Box>
+            </div>
           </NavLink>
           <NavLink
             to="/categories/skincare"
             onClick={() => window.scrollTo(0, 0)}>
-            <Box className={styles.skinCare}>
+            <div className={styles.skinCare}>
               <img src={skinCarePic} alt="skincare" />
               <h2>Skincare</h2>
-            </Box>
+            </div>
           </NavLink>
 
-          <Box className={styles.containerTwo}>
+          <div className={styles.containerTwo}>
             <NavLink
               to="/categories/kitchen"
               onClick={() => window.scrollTo(0, 0)}>
-              <Box className={styles.kitchen}>
+              <div className={styles.kitchen}>
                 <img src={kitchen} alt="kitchen" />
                 <h2>Kitchen</h2>
-              </Box>
+              </div>
             </NavLink>
             <NavLink
               to="/categories/electronics"
               onClick={() => window.scrollTo(0, 0)}>
-              <Box className={styles.electronics}>
+              <div className={styles.electronics}>
                 <img src={electronics} alt="electronics" />
                 <h2>Electronics</h2>
-              </Box>
+              </div>
             </NavLink>
-          </Box>
-        </Box>
+          </div>
+        </div>
 
-        <Box className={styles.productsContainer}>
+        <div className={styles.productsContainer}>
           <h2>OUR PRODUCTS</h2>
           <hr />
-          <Box className={styles.cardsContainer}>
+          <div className={styles.cardsContainer}>
             {/*only the first 8 products from the array are displayed*/}
             {products.slice(0, 8).map((product) => {
               return (
@@ -109,13 +109,13 @@ const HomeContent = () => {
                 </NavLink>
               )
             })}
-          </Box>
-        </Box>
+          </div>
+        </div>
 
         {/*ad block*/}
-        <Box className={styles.adContainer}>
-          <Box className={styles.adTextContainer}>
-            <Box>
+        <div className={styles.adContainer}>
+          <div className={styles.adTextContainer}>
+            <div>
               <h3>Creative harmonius living</h3>
               <p>
                 Our Products are all made to standart sizes <br /> so that you
@@ -126,23 +126,23 @@ const HomeContent = () => {
                 onClick={() => window.scrollTo(0, 0)}>
                 <Button sx={stylesForButton.button}>SHOP NOW</Button>
               </NavLink>
-            </Box>
-          </Box>
-          <Box className={styles.adPictureContainer}>
+            </div>
+          </div>
+          <div className={styles.adPictureContainer}>
             <img src={harmonius} alt="example" />
-          </Box>
-        </Box>
+          </div>
+        </div>
 
         {/*recommended products*/}
         <TrendingSlider />
 
         {/*ad block*/}
-        <Box className={styles.adContainer2}>
-          <Box className={styles.adPictureContainer2}>
+        <div className={styles.adContainer2}>
+          <div className={styles.adPictureContainer2}>
             <img src={comfortable} alt="example" />
-          </Box>
-          <Box className={styles.adTextContainer2}>
-            <Box>
+          </div>
+          <div className={styles.adTextContainer2}>
+            <div>
               <h3>Comfortable living</h3>
               <p>
                 Our Products are all made to standart sizes <br /> so that you
@@ -153,10 +153,10 @@ const HomeContent = () => {
                 onClick={() => window.scrollTo(0, 0)}>
                 <Button sx={stylesForButton.button}>SHOP NOW</Button>
               </NavLink>
-            </Box>
-          </Box>
-        </Box>
-      </Box>
+            </div>
+          </div>
+        </div>
+      </div>
     </Container>
   )
 }

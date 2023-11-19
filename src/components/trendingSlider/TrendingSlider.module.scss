@@ -1,3 +1,6 @@
+@import '../../scssMixinsAndVariables/mixins.scss';
+@import '../../scssMixinsAndVariables/variables.scss';
+
 .mainContainer {
   width: 100%;
   display: flex;
@@ -6,12 +9,10 @@
 }
 
 .titleBtns {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include blockSettings2(flex, space-between, center);
 
   h3 {
-    font-family: 'Nunito';
+    font-family: $nunitoFont;
     font-size: 1.6rem;
   }
 }
@@ -21,9 +22,7 @@
   gap: 0.4rem;
 
   button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include blockSettings2(flex, center, center);
     color: white;
     background: black;
     padding: 1rem;

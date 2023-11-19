@@ -1,11 +1,12 @@
+@import '../../scssMixinsAndVariables/mixins.scss';
+@import '../../scssMixinsAndVariables/variables.scss';
+
 .categoriesContainer {
+  @include blockSettings2(flex, center, center);
   margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   h2 {
-    font-family: 'Nunito', sans-serif;
+    font-family: $nunitoFont;
     font-size: 1.8rem;
   }
 }
@@ -97,8 +98,8 @@
 }
 
 .containerTwo {
-  display: flex;
   width: 200px;
+  display: flex;
   flex-direction: column;
 }
 
@@ -190,14 +191,13 @@
 }
 
 .productsContainer {
-  display: flex;
-  flex-direction: column;
+  @include blockSettings3(flex, column, center);
+
   margin-top: 30px;
-  align-items: center;
   h2 {
     text-align: center;
     margin: 20px 0px 0px 0px;
-    font-family: 'Lora', serif;
+    font-family: $loraFont;
     font-size: 1.4rem;
   }
   hr {
@@ -224,28 +224,24 @@
 }
 
 .adContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include blockSettings2(flex, center, center);
   flex-direction: row;
   margin-top: 40px;
 }
 
 .adTextContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include blockSettings2(flex, center, center);
 
   width: 400px;
   height: 250px;
   h3 {
-    font-family: 'Nunito', sans-serif;
+    font-family: $nunitoFont;
     font-size: 1.6rem;
   }
 
   p {
     font-size: 0.9rem;
-    font-family: 'Nunito', sans-serif;
+    font-family: $nunitoFont;
   }
 }
 
@@ -260,29 +256,26 @@
 }
 
 .adContainer2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include blockSettings2(flex, center, center);
+
   flex-direction: row;
   margin-top: 40px;
 }
 
 .adTextContainer2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include blockSettings2(flex, center, center);
 
   width: 400px;
   height: 250px;
 
   h3 {
-    font-family: 'Nunito', sans-serif;
+    font-family: $nunitoFont;
     font-size: 1.6rem;
   }
 
   p {
     font-size: 0.9rem;
-    font-family: 'Nunito', sans-serif;
+    font-family: $nunitoFont;
   }
 }
 

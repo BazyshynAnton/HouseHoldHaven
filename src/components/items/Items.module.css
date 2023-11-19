@@ -44,11 +44,11 @@
   height: 100px;
 }
 .text h3 {
-  font-family: "Lora", serif;
+  font-family: "Lora";
   font-size: 0.9rem;
 }
 .text h5 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito";
   font-weight: 800;
   font-size: 1rem;
   padding: 5px 0;

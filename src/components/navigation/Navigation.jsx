@@ -11,7 +11,6 @@ import {
   IconButton,
   SwipeableDrawer,
   Divider,
-  Box,
   Container,
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
@@ -76,8 +75,8 @@ const Navigation = () => {
   }
 
   return (
-    <Box
-      sx={{
+    <div
+      style={{
         background: '#fff',
       }}>
       <AppBar
@@ -104,7 +103,7 @@ const Navigation = () => {
                       window.scrollTo(0, 0)
                     }, 0)
                   }}>
-                  <Box sx={{ width: '60px', height: '60px' }}>
+                  <div style={{ width: '60px', height: '60px' }}>
                     <img
                       src={websiteLogo}
                       alt="website-logo"
@@ -114,13 +113,13 @@ const Navigation = () => {
                         objectFit: 'cover',
                       }}
                     />
-                  </Box>
+                  </div>
                 </NavLink>
                 <List
                   sx={{
                     display: 'flex',
                   }}>
-                  <Box sx={{ display: 'flex' }}>
+                  <div style={{ display: 'flex' }}>
                     <ListItem>
                       <NavLink
                         to="."
@@ -163,8 +162,8 @@ const Navigation = () => {
 
                     <ListItem>
                       {/* Shopping cart in navbar */}
-                      <Box
-                        sx={{ color: 'black', cursor: 'pointer' }}
+                      <div
+                        style={{ color: 'black', cursor: 'pointer' }}
                         onClick={handleCartIconClick}>
                         <ShoppingCartIcon />
                         {!!cartProducts.length && (
@@ -172,14 +171,14 @@ const Navigation = () => {
                             {cartProducts.length}
                           </span>
                         )}
-                      </Box>
+                      </div>
                       {/* Show Cart Sliding Menu */}
                       <CartMenu
                         isOpen={isCartMenuOpen}
                         handleCloseCartMenu={handleCloseCartMenu}
                       />
                     </ListItem>
-                  </Box>
+                  </div>
                 </List>
               </>
             </Toolbar>
@@ -203,8 +202,8 @@ const Navigation = () => {
                 </IconButton>
                 <ListItem>
                   {/* Shopping cart in navbar */}
-                  <Box
-                    sx={{ color: 'black', cursor: 'pointer' }}
+                  <div
+                    style={{ color: 'black', cursor: 'pointer' }}
                     onClick={handleCartIconClick}>
                     <ShoppingCartIcon />
                     {!!cartProducts.length && (
@@ -212,7 +211,7 @@ const Navigation = () => {
                         {cartProducts.length}
                       </span>
                     )}
-                  </Box>
+                  </div>
                   {/* Show Cart Sliding Menu */}
                   <CartMenu
                     isOpen={isCartMenuOpen}
@@ -226,8 +225,8 @@ const Navigation = () => {
 
         {/*overlay that appears when the cart menu (CartMenu) is open*/}
         {isCartMenuOpen && (
-          <Box
-            sx={{
+          <div
+            style={{
               position: 'fixed',
               top: '0',
               left: '0',
@@ -236,7 +235,7 @@ const Navigation = () => {
               background: 'rgba(0, 0, 0, 0.5)',
               zIndex: '998',
             }}
-            onClick={handleCloseCartMenu}></Box>
+            onClick={handleCloseCartMenu}></div>
         )}
 
         {/*pull-down menu (for mobile version)*/}
@@ -266,7 +265,7 @@ const Navigation = () => {
                   }, 0)
                   setOpen(false)
                 }}>
-                <Box sx={{ width: '60px', height: '60px' }}>
+                <div style={{ width: '60px', height: '60px' }}>
                   <img
                     src={websiteLogo}
                     alt="website-logo"
@@ -276,7 +275,7 @@ const Navigation = () => {
                       objectFit: 'cover',
                     }}
                   />
-                </Box>
+                </div>
               </NavLink>
               <ListItem
                 sx={{
@@ -346,7 +345,7 @@ const Navigation = () => {
           </SwipeableDrawer>
         )}
       </AppBar>
-    </Box>
+    </div>
   )
 }
 

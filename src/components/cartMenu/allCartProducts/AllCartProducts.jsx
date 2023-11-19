@@ -1,4 +1,4 @@
-import { Box, Container } from '@mui/material'
+import { Container } from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close'
 
 import { useContext } from 'react'
@@ -32,8 +32,8 @@ const AllCartProducts = () => {
   }
   return (
     <Container>
-      <Box
-        sx={{
+      <div
+        style={{
           display: 'flex',
           flexDirection: 'column',
           width: '100%',
@@ -58,11 +58,11 @@ const AllCartProducts = () => {
           </button>
         </NavLink>
 
-        <Box className={styles.listOfProducts}>
+        <div className={styles.listOfProducts}>
           {cartProducts.map((product) => (
-            <Box
+            <div
               key={product.id}
-              sx={{
+              style={{
                 position: 'relative',
                 display: 'flex',
                 alignItems: 'center',
@@ -73,17 +73,17 @@ const AllCartProducts = () => {
                 textAlign: 'center',
                 padding: '10px',
               }}>
-              <Box sx={{ width: '150px', height: '150px' }}>
+              <div style={{ width: '150px', height: '150px' }}>
                 <img
                   src={product.img1}
                   alt="product"
                   style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                 />
-              </Box>
-              <Box className={styles.text}>
+              </div>
+              <div className={styles.text}>
                 <h3>{product.name}</h3>
                 <h5>{product.defaultPrice * product.quantity}.00$</h5>
-              </Box>
+              </div>
               <CloseIcon
                 onClick={() => handleRemoveItem(product.id)}
                 sx={{
@@ -93,8 +93,8 @@ const AllCartProducts = () => {
                   cursor: 'pointer',
                 }}
               />
-              <Box
-                sx={{
+              <div
+                style={{
                   display: 'flex',
                   border: '1px solid black',
                   position: 'absolute',
@@ -145,16 +145,16 @@ const AllCartProducts = () => {
                   }}>
                   +
                 </button>
-              </Box>
-            </Box>
+              </div>
+            </div>
           ))}
-        </Box>
-      </Box>
-      <Box className={styles.totalContainer}>
-        <Box className={styles.txtTotal}>
+        </div>
+      </div>
+      <div className={styles.totalContainer}>
+        <div className={styles.txtTotal}>
           <p>Subtotal</p>
           <p>{calculateTotalAmount()}.00$</p>
-        </Box>
+        </div>
         <button
           style={{
             width: '150px',
@@ -168,7 +168,7 @@ const AllCartProducts = () => {
           }}>
           Go To Checkout
         </button>
-      </Box>
+      </div>
     </Container>
   )
 }
